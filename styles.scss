@@ -5,6 +5,20 @@ body {
   margin: auto;
 }
 
+/* Header */
+
+.header {
+  width: 100%;
+  text-align: right;
+  position: relative;
+
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
 .banner {
   display: flex;
   position: relative;
