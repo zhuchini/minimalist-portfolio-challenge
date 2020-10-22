@@ -1,4 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap");
+.banner-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 2.5em;
+  bottom: 0;
+  left: 0;
+}
+
+.banner-btn .down-arrow {
+  background-color: #33323D;
+  padding: 13px;
+  display: block;
+}
+
+.banner-btn button {
+  padding: 0 36px;
+}
+
+.banner-btn .abt-me {
+  background-color: #203A4C;
+  border: none;
+  color: #FAFAFA;
+  font-family: 'Public Sans', serif;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 .header {
   width: 100%;
   margin: 16px 0;
@@ -30,6 +64,7 @@
 }
 
 body {
+  background-color: #FAFAFA;
   max-width: 1080px;
   margin: auto;
 }
@@ -59,12 +94,7 @@ body {
   margin-right: 28px;
 }
 
-.banner .banner-text .banner-btn .down-arrow {
-  background-color: #203A4C;
-}
-
-.banner .abt-me {
-  background-color: #33323D;
-  color: white;
+.profile {
+  margin: 24px 0;
 }
 /*# sourceMappingURL=main.css.map */

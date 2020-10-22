@@ -1,0 +1,30 @@
+.banner-btn {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  height: 2.5em;
+  // width: 12em;
+  bottom: 0;
+  left: 0;
+
+  .down-arrow {
+    background-color: #33323D;
+    // margin: 0;
+    padding: 13px;
+    display: block;
+  }
+
+  button {
+    padding: 0 36px;
+  }
+
+  .abt-me {
+    background-color: #203A4C;
+    border: none;
+    color: #FAFAFA;
+    font-family: 'Public Sans', serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}
