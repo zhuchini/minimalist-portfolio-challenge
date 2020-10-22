@@ -1,0 +1,55 @@
+// Base
+
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/reset';
+
+// Components
+
+@import 'components/typography';
+@import 'components/buttons';
+@import 'components/navigation';
+
+body {
+  max-width: 1080px;
+  margin: auto;
+}
+
+// Banner
+
+.banner img {
+  max-width: 100%;
+}
+
+.banner {
+  position: relative;
+
+  .banner-text {
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 22em;
+    width: 27em;
+
+    p {
+      color:#33323D;
+      font-family: 'Ibarra Real Nova', serif;
+      font-size: 42px;
+      font-weight: bold;
+      margin-right: 28px;
+    }
+
+    .banner-btn {
+      .down-arrow {
+        background-color: #203A4C;
+      }
+    }
+  }
+
+  .abt-me {
+    background-color: #33323D;
+    color: white;
+  }
+}
+

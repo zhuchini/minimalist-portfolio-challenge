@@ -1,0 +1,22 @@
+.header {
+  width: 100%;
+  margin: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  display: inline-block;
+  padding: 15px 0;
+  margin: 16px 0 16px 44px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #33323D;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 900;
+  font-size: 12px;
+  letter-spacing: 1px;
+  transform: scale(1, 0.9);
+}
