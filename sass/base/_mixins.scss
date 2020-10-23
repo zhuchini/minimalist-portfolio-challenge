@@ -1,0 +1,21 @@
+@mixin nav-links {
+  display: inline-block;
+  margin: 16px 0 16px 44px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  transform: scale(1, 0.9);
+}
+
+@mixin white-btn {
+  background-color: white;
+  border: 1px solid #33323D;
+  font-size: 10px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  padding: 16px 32px;
+  text-transform: uppercase;
+}
