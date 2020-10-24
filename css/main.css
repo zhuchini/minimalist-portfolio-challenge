@@ -8,7 +8,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 2.5em;
+  height: 2.6em;
   bottom: 0;
   left: 0;
 }
@@ -54,8 +54,8 @@
 }
 
 .header {
-  width: 100%;
-  margin: 16px 0;
+  margin: auto;
+  max-width: 1080px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,16 +85,20 @@
 
 body {
   background-color: #FAFAFA;
-  max-width: 1080px;
-  margin: auto;
+  margin: 0;
 }
 
-.banner img {
-  max-width: 100%;
+.container {
+  margin: auto;
+  width: 1080px;
 }
 
 .banner {
   position: relative;
+}
+
+.banner img {
+  width: 100%;
 }
 
 .banner .banner-text {
@@ -170,22 +174,40 @@ body {
   color: #EAEAEB;
 }
 
-.real-footer {
+footer {
   background-color: #33323D;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 4em;
+  width: 100%;
+}
+
+footer .real-footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 4.7em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  width: 1080px;
 }
 
-.real-footer .menu-2 {
+footer .real-footer .left-footer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .real-footer .left-footer .menu-2 {
   height: 4em;
 }
 
-.real-footer .menu-2 .link-2 {
+footer .real-footer .left-footer .menu-2 .link-2 {
   display: inline-block;
   margin: 16px 0 16px 44px;
   position: relative;
@@ -200,7 +222,7 @@ body {
   padding: 10px 0;
 }
 
-.real-footer .social-icons ul {
+footer .real-footer .social-icons ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -210,12 +232,12 @@ body {
   list-style-type: none;
 }
 
-.real-footer .social-icons li {
+footer .real-footer .social-icons li {
   float: left;
   padding-right: 0.7rem;
 }
 
-.real-footer .social-icons .fab {
+footer .real-footer .social-icons .fab {
   color: #EAEAEB;
   font-size: 1.3rem;
 }

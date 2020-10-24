@@ -12,18 +12,22 @@
 
 body {
   background-color: #FAFAFA;
-  max-width: 1080px;
+  margin: 0;
+}
+
+.container {
   margin: auto;
+  width: 1080px;
 }
 
 // Banner
 
-.banner img {
-  max-width: 100%;
-}
-
 .banner {
   position: relative;
+
+  img {
+    width: 100%;
+  }
 
   .banner-text {
     background-color: white;
@@ -93,39 +97,49 @@ body {
   }
 }
 
-.real-footer {
+footer {
   background-color: #33323D;
-  display: flex;
-  height: 4em;
-  align-items: center;
-  // justify-content: space-between;
+  width: 100%;
 
-  .menu-2 {
-    height: 4em;
-    
-    .link-2 {
-      @include nav-links;
-      color: #EAEAEB;
-      padding: 10px 0;
-    }
-  }
+  .real-footer {
+    align-items: center;
+    display: flex;
+    height: 4.7em;
+    justify-content: space-between;
+    margin: auto;
+    width: 1080px;
 
-  .social-icons {
-    
-    ul {
-      display: flex;
+    .left-footer{
       align-items: center;
-      list-style-type: none;
+      display: flex;
+    
+      .menu-2 {
+        height: 4em;
+      
+        .link-2 {
+          @include nav-links;
+          color: #EAEAEB;
+          padding: 10px 0;
+        }
+      }
     }
 
-    li {
-      float: left;
-      padding-right: 0.7rem;
-    }
-    
-    .fab {
-      color: #EAEAEB;
-      font-size: 1.3rem;
+    .social-icons {
+      ul {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+      }
+
+      li {
+        float: left;
+        padding-right: 0.7rem;
+      }
+
+      .fab {
+        color: #EAEAEB;
+        font-size: 1.3rem;
+      }
     }
   }
 }
