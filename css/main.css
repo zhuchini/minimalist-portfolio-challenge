@@ -71,6 +71,10 @@
           align-items: center;
 }
 
+.header .menu a.active-page {
+  color: #5FB4A2;
+}
+
 .link {
   display: inline-block;
   margin: 16px 0 16px 44px;
