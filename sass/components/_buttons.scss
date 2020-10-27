@@ -1,14 +1,14 @@
 .banner-btn {
+  cursor: pointer;
   display: flex;
-  position: absolute;
   flex-direction: row;
+  position: absolute;
   height: 2.6em;
   bottom: 0;
   left: 0;
 
   .down-arrow {
     background-color: #33323D;
-    // margin: 0;
     padding: 13px;
     display: block;
   }
@@ -18,11 +18,12 @@
   }
 
   .abt-me {
+    cursor: pointer;
     background-color: #203A4C;
     border: none;
     color: #FAFAFA;
     font-family: 'Public Sans', serif;
-    font-size: 10px;
+    font-size: 11px;
     letter-spacing: 1px;
     text-transform: uppercase;
   }
@@ -31,11 +32,13 @@
 .portfolio-btn {
   button {
     @include white-btn;
+    cursor: pointer;
   }
 }
 
 .contact-btn {
   button {
     @include white-btn;
+    cursor: pointer;
   }
 }

@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap");
 .banner-btn {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  position: absolute;
   height: 2.6em;
   bottom: 0;
   left: 0;
@@ -24,11 +25,12 @@
 }
 
 .banner-btn .abt-me {
+  cursor: pointer;
   background-color: #203A4C;
   border: none;
   color: #FAFAFA;
   font-family: 'Public Sans', serif;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -41,6 +43,7 @@
   letter-spacing: 2px;
   padding: 16px 32px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .contact-btn button {
@@ -51,6 +54,7 @@
   letter-spacing: 2px;
   padding: 16px 32px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .header {
