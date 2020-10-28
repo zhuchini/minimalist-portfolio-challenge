@@ -320,19 +320,21 @@ footer .real-footer .social-icons .fab {
 }
 
 .project-slide {
-  border-bottom: 1px solid #EAEAEB;
-  border-top: 1px solid #EAEAEB;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 16px 0 48px 0;
-  padding: 16px 0;
 }
 
-.project-slide .prev-next .previous, .project-slide .prev-next .next {
+.project-slide .prev-next-1, .project-slide .prev-next-2 {
+  margin: 16px 0 48px 0;
+  padding: 16px 0;
+  width: 100%;
+}
+
+.project-slide .prev-next-1 .previous, .project-slide .prev-next-1 .next, .project-slide .prev-next-2 .previous, .project-slide .prev-next-2 .next {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,27 +343,44 @@ footer .real-footer .social-icons .fab {
           align-items: center;
 }
 
-.project-slide .prev-next .previous .left-slide p, .project-slide .prev-next .previous .right-slide p, .project-slide .prev-next .next .left-slide p, .project-slide .prev-next .next .right-slide p {
+.project-slide .prev-next-1 .previous .left-slide p, .project-slide .prev-next-1 .previous .right-slide p, .project-slide .prev-next-1 .next .left-slide p, .project-slide .prev-next-1 .next .right-slide p, .project-slide .prev-next-2 .previous .left-slide p, .project-slide .prev-next-2 .previous .right-slide p, .project-slide .prev-next-2 .next .left-slide p, .project-slide .prev-next-2 .next .right-slide p {
   font-family: 'Ibarra Real Nova', serif;
   font-size: 24px;
-  margin: 4px 0 0 0;
+  margin: 0;
 }
 
-.project-slide .prev-next .previous .left-slide span, .project-slide .prev-next .previous .right-slide span, .project-slide .prev-next .next .left-slide span, .project-slide .prev-next .next .right-slide span {
+.project-slide .prev-next-1 .previous .left-slide span, .project-slide .prev-next-1 .previous .right-slide span, .project-slide .prev-next-1 .next .left-slide span, .project-slide .prev-next-1 .next .right-slide span, .project-slide .prev-next-2 .previous .left-slide span, .project-slide .prev-next-2 .previous .right-slide span, .project-slide .prev-next-2 .next .left-slide span, .project-slide .prev-next-2 .next .right-slide span {
   color: #bbbaba;
   font-family: 'Public Sans', sans-serif;
   font-size: 13px;
 }
 
-.project-slide .previous svg {
+.project-slide .prev-next-1 {
+  border-bottom: 1px solid #EAEAEB;
+  border-right: 1px solid #EAEAEB;
+  border-top: 1px solid #EAEAEB;
+}
+
+.project-slide .prev-next-1 .previous svg {
   padding-right: 20px;
 }
 
-.project-slide .next {
+.project-slide .prev-next-2 {
+  border-bottom: 1px solid #EAEAEB;
+  border-top: 1px solid #EAEAEB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.project-slide .prev-next-2 .next {
   text-align: right;
 }
 
-.project-slide .next svg {
+.project-slide .prev-next-2 .next svg {
   padding-left: 20px;
 }
 /*# sourceMappingURL=main.css.map */

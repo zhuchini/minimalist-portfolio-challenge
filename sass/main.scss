@@ -211,15 +211,17 @@ footer {
 }
 
 .project-slide {
-  border-bottom: 1px solid #EAEAEB;
-  border-top: 1px solid #EAEAEB;
   display: flex;
   justify-content: space-between;
-  margin: 16px 0 48px 0;
-  padding: 16px 0;
+  // margin: 16px 0 48px 0;
+  // padding: 16px 0;
 
-  .prev-next {
-    
+  .prev-next-1, .prev-next-2 {
+    // border: 2px solid red;
+    margin: 16px 0 48px 0;
+    padding: 16px 0;
+    width: 100%;
+
     .previous, .next {
       display: flex;
       align-items: center;
@@ -228,7 +230,7 @@ footer {
         p {
           font-family: 'Ibarra Real Nova', serif;
           font-size: 24px;
-          margin: 4px 0 0 0;
+          margin: 0;
         }
         span {
           color: #bbbaba;
@@ -239,17 +241,30 @@ footer {
     }
   }
 
-  .previous {
-    svg {
-      padding-right: 20px;
+  .prev-next-1 {
+    border-bottom: 1px solid #EAEAEB;
+    border-right: 1px solid #EAEAEB;
+    border-top: 1px solid #EAEAEB;
+
+    .previous {
+      svg {
+        padding-right: 20px;
+      }
     }
   }
 
-  .next {
-    text-align: right;
+  .prev-next-2 {
+    border-bottom: 1px solid #EAEAEB;
+    border-top: 1px solid #EAEAEB;
+    display: flex;
+    justify-content: flex-end;
 
-    svg {
-      padding-left: 20px;
+    .next {
+      text-align: right;
+      
+      svg {
+        padding-left: 20px;
+      }
     }
   }
 }
