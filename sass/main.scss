@@ -20,9 +20,10 @@ body {
   width: 1080px;
 }
 
-// Banner
+// ----------- *** Banner *** -------------
 
 .banner {
+  margin: 48px 0 80px 0;
   position: relative;
 
   img {
@@ -58,8 +59,8 @@ body {
   }
 
   .profile-txt {
-    border-top: 1px solid #EAEAEB;
     border-bottom: 1px solid #EAEAEB;
+    border-top: 1px solid #EAEAEB;
     margin: 0 112px;
 
     h1 {
@@ -75,7 +76,7 @@ body {
   }
 }
 
-// Footer
+// ------------ *** Footer *** -------------
 
 .contact-footer {
   display: flex;
@@ -144,26 +145,111 @@ footer {
   }
 }
 
-// Porfolio
+// ------------- *** Porfolio *** --------------
 
 .project {
   display: flex;
 
   .left-desc {
+    border-bottom: 1px solid #EAEAEB;
+    border-top: 1px solid #EAEAEB;
     float: left;
-    margin-right: 1.5rem;
-    width: 90rem;
+    height: 27rem;
+    margin-right: 4.2rem;
+
+    h2 {
+      font-family: 'Ibarra Real Nova', serif;
+      font-size: 32px;
+    }
 
     p {
       font-family: 'Public Sans', sans-serif;
       font-size: 15px;
       line-height: 30px;
     }
+
+    .project-lang{
+      color: #5FB4A2;
+    }
   }
 
   .visit-btn {
     button {
       @include white-btn;
+      cursor: pointer;
+    }
+  }
+
+  .right-desc {
+    padding-left: 32px;
+    width: 645px;
+
+    h3 {
+      font-family: 'Ibarra Real Nova', serif;
+      font-size: 24px;
+      font-weight: 500;
+      margin-top: 0;
+    }
+
+    .background {    
+      p {
+        font-family: 'Public Sans', sans-serif;
+        font-size: 15px;
+        line-height: 30px;
+        margin-bottom: 32px;
+      }
+    }
+
+    .previews {
+      width: 100%;
+
+      img {
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+
+.project-slide {
+  border-bottom: 1px solid #EAEAEB;
+  border-top: 1px solid #EAEAEB;
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0 48px 0;
+  padding: 16px 0;
+
+  .prev-next {
+    
+    .previous, .next {
+      display: flex;
+      align-items: center;
+      
+      .left-slide, .right-slide {
+        p {
+          font-family: 'Ibarra Real Nova', serif;
+          font-size: 24px;
+          margin: 4px 0 0 0;
+        }
+        span {
+          color: #bbbaba;
+          font-family: 'Public Sans', sans-serif;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  .previous {
+    svg {
+      padding-right: 20px;
+    }
+  }
+
+  .next {
+    text-align: right;
+
+    svg {
+      padding-left: 20px;
     }
   }
 }

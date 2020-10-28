@@ -59,6 +59,7 @@
 
 .header {
   margin: auto;
+  margin-top: 16px;
   max-width: 1080px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -102,6 +103,7 @@ body {
 }
 
 .banner {
+  margin: 48px 0 80px 0;
   position: relative;
 }
 
@@ -140,8 +142,8 @@ body {
 }
 
 .profile .profile-txt {
-  border-top: 1px solid #EAEAEB;
   border-bottom: 1px solid #EAEAEB;
+  border-top: 1px solid #EAEAEB;
   margin: 0 112px;
 }
 
@@ -257,15 +259,26 @@ footer .real-footer .social-icons .fab {
 }
 
 .project .left-desc {
+  border-bottom: 1px solid #EAEAEB;
+  border-top: 1px solid #EAEAEB;
   float: left;
-  margin-right: 1.5rem;
-  width: 90rem;
+  height: 27rem;
+  margin-right: 4.2rem;
+}
+
+.project .left-desc h2 {
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 32px;
 }
 
 .project .left-desc p {
   font-family: 'Public Sans', sans-serif;
   font-size: 15px;
   line-height: 30px;
+}
+
+.project .left-desc .project-lang {
+  color: #5FB4A2;
 }
 
 .project .visit-btn button {
@@ -276,5 +289,79 @@ footer .real-footer .social-icons .fab {
   letter-spacing: 2px;
   padding: 16px 32px;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.project .right-desc {
+  padding-left: 32px;
+  width: 645px;
+}
+
+.project .right-desc h3 {
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.project .right-desc .background p {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  margin-bottom: 32px;
+}
+
+.project .right-desc .previews {
+  width: 100%;
+}
+
+.project .right-desc .previews img {
+  margin-bottom: 24px;
+}
+
+.project-slide {
+  border-bottom: 1px solid #EAEAEB;
+  border-top: 1px solid #EAEAEB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 16px 0 48px 0;
+  padding: 16px 0;
+}
+
+.project-slide .prev-next .previous, .project-slide .prev-next .next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project-slide .prev-next .previous .left-slide p, .project-slide .prev-next .previous .right-slide p, .project-slide .prev-next .next .left-slide p, .project-slide .prev-next .next .right-slide p {
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 24px;
+  margin: 4px 0 0 0;
+}
+
+.project-slide .prev-next .previous .left-slide span, .project-slide .prev-next .previous .right-slide span, .project-slide .prev-next .next .left-slide span, .project-slide .prev-next .next .right-slide span {
+  color: #bbbaba;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 13px;
+}
+
+.project-slide .previous svg {
+  padding-right: 20px;
+}
+
+.project-slide .next {
+  text-align: right;
+}
+
+.project-slide .next svg {
+  padding-left: 20px;
 }
 /*# sourceMappingURL=main.css.map */
