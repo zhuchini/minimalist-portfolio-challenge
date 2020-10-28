@@ -143,4 +143,28 @@ footer {
     }
   }
 }
+
+// Porfolio
+
+.project {
+  display: flex;
+
+  .left-desc {
+    float: left;
+    margin-right: 1.5rem;
+    width: 90rem;
+
+    p {
+      font-family: 'Public Sans', sans-serif;
+      font-size: 15px;
+      line-height: 30px;
+    }
+  }
+
+  .visit-btn {
+    button {
+      @include white-btn;
+    }
+  }
+}
   

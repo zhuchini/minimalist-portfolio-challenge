@@ -249,4 +249,32 @@ footer .real-footer .social-icons .fab {
   color: #EAEAEB;
   font-size: 1.3rem;
 }
+
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.project .left-desc {
+  float: left;
+  margin-right: 1.5rem;
+  width: 90rem;
+}
+
+.project .left-desc p {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.project .visit-btn button {
+  background-color: white;
+  border: 1px solid #33323D;
+  font-size: 10px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  padding: 16px 32px;
+  text-transform: uppercase;
+}
 /*# sourceMappingURL=main.css.map */
