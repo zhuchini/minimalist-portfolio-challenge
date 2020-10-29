@@ -383,4 +383,10 @@ footer .real-footer .social-icons .fab {
 .project-slide .prev-next-2 .next svg {
   padding-left: 20px;
 }
+
+.project-preview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*# sourceMappingURL=main.css.map */
