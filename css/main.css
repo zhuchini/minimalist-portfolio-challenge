@@ -35,24 +35,35 @@
   text-transform: uppercase;
 }
 
-.portfolio-btn button {
+.portfolio-btn {
+  margin-top: 32px;
+}
+
+.portfolio-btn a {
   background-color: white;
-  border: 1px solid #33323D;
+  border: 1px solid black;
+  color: #33323D;
+  cursor: pointer;
+  font-family: 'Public Sans', sans-serif;
   font-size: 10px;
-  font-weight: lighter;
+  font-weight: 600;
   letter-spacing: 2px;
   padding: 16px 32px;
+  text-decoration: none;
   text-transform: uppercase;
-  cursor: pointer;
 }
 
 .contact-btn button {
   background-color: white;
-  border: 1px solid #33323D;
+  border: 1px solid black;
+  color: #33323D;
+  cursor: pointer;
+  font-family: 'Public Sans', sans-serif;
   font-size: 10px;
-  font-weight: lighter;
+  font-weight: 600;
   letter-spacing: 2px;
   padding: 16px 32px;
+  text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -284,11 +295,15 @@ footer .real-footer .social-icons .fab {
 
 .project .visit-btn button {
   background-color: white;
-  border: 1px solid #33323D;
+  border: 1px solid black;
+  color: #33323D;
+  cursor: pointer;
+  font-family: 'Public Sans', sans-serif;
   font-size: 10px;
-  font-weight: lighter;
+  font-weight: 600;
   letter-spacing: 2px;
   padding: 16px 32px;
+  text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -430,11 +445,15 @@ footer .real-footer .social-icons .fab {
 
 .project-preview .project-desc .visit-btn button {
   background-color: white;
-  border: 1px solid #33323D;
+  border: 1px solid black;
+  color: #33323D;
+  cursor: pointer;
+  font-family: 'Public Sans', sans-serif;
   font-size: 10px;
-  font-weight: lighter;
+  font-weight: 600;
   letter-spacing: 2px;
   padding: 16px 32px;
+  text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
 }

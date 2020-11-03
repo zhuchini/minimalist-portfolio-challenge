@@ -5,47 +5,128 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/css/main.css">
+
+  <script src="https://kit.fontawesome.com/8ecd2bb40c.js" crossorigin="anonymous"></script>
   
   <title>Frontend Mentor | Fylo Project</title>
 </head>
 <body>
+  <div class="header">
+    <div class="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="61" height="32"><path fill="#33323D" fill-rule="evenodd" d="M60.082 5.878L44.408 32 28.735 5.878h31.347zM15.673 0l15.674 26.122H0L15.673 0z"/></svg>
+    </div>
+    <div class="menu">
+      <a href="index.html" class="link">Home</a>
+      <a href="bookmark.html" class="link active-page">Portfolio</a>
+      <a href="contact.html" class="link">Contact Me</a>
+    </div>
+  </div>
 
-  Home
-  Portfolio
-  Contact Me
+  <div class="container">
+    <div class="banner">
+      <img src="/starter-code/images/detail/desktop/image-fylo-hero.jpg" alt="">
+    </div>
 
-  Fylo
+    <div class="project">
+      <div class="left-desc">
+        <h2>
+          Fylo
+        </h2>
+        <p>
+          This project was built in pure HTML and CSS. I had mobile and desktop designs to 
+          work to and built it so that it was fully-responsive. I took a mobile-first approach 
+          and used modern CSS like Flexbox and Grid for layout purposes.
+        </p>
+        <p class="project-lang">Interaction Design / Front End Development</p>
+        <p class="project-lang">HTML / CSS</p>
+        <div class="visit-btn">
+          <button>
+            Visit Website
+          </button>
+        </div>
+      </div>
 
-  This project was built in pure HTML and CSS. I had mobile and desktop designs to 
-  work to and built it so that it was fully-responsive. I took a mobile-first approach 
-  and used modern CSS like Flexbox and Grid for layout purposes.
+      <div class="right-desc">
+        <div class="background">
+          <h3>Project Background</h3>
+          <p>
+            This project was a front-end challenge from Frontend Mentor. It’s a platform that 
+            enables you to practice building websites to a design and project brief. Each challenge 
+            includes mobile and desktop designs to show how the website should look at different 
+            screen sizes. Creating these projects has helped me refine my workflow and solve 
+            real-world coding problems. I’ve learned something new with each project, helping 
+            me to improve and adapt my style.
+          </p>
+        </div>
+        <div class="previews">
+          <h3>Static Previews</h3>
+          <img src="/starter-code/images/detail/desktop/image-fylo-preview-1.jpg" alt="Bookmark project preview image one">
+          <img src="/starter-code/images/detail/desktop/image-fylo-preview-2.jpg" alt="Bookmark project preview image two">
+        </div>
+      </div>
+    </div>
 
-  Interaction Design / Front End Development
+    <div class="project-slide">
+      <div class="prev-next-1">
+        <div class="previous">
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16"><path fill="none" stroke="#33323D" d="M9 0L1 8l8 8"/></svg>
+          <div class="left-slide">
+            <p>Insure</p>
+            <span>Previous Project</span>
+          </div>
+        </div>
+      </div>
+      <div class="prev-next-2">
+        <div class="next">
+          <div class="right-slide">
+            <p>Manage</p>
+            <span>Next Project</span>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16"><path fill="none" stroke="#33323D" d="M1 0l8 8-8 8"/></svg>
+        </div>
+      </div>
+    </div>
 
-  HTML / CSS
+    <div class="contact-footer">
+      <div class="contact-txt">
+        <h2>
+          Interested in doing a project together?
+        </h2>
+      </div>
+      <div class="line">
+        <p>__________________________________________________________________</p>
+      </div>
+      <div class="contact-btn">
+        <button>
+          Contact Me
+        </button>
+      </div>
+    </div>
+  </div>
 
-  Visit Website
-
-  Project Background
-
-  This project was a front-end  challenge from Frontend Mentor. It’s a platform that 
-  enables you to practice building websites to a design and project brief. Each challenge 
-  includes mobile and desktop designs to show how the website should look at different 
-  screen sizes. Creating these projects has helped me refine my workflow and solve 
-  real-world coding problems. I’ve learned something new with each project, helping 
-  me to improve and adapt my style.
-
-  Static Previews
-
-  Insure
-  Previous Project
-
-  Manage
-  Next Project
-
-  Interested in doing a project together?
-
-  Contact Me
-
+  <footer>
+    <div class="real-footer">
+      <div class="left-footer">
+        <div class="logo-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="61" height="32"><path fill="#FAFAFA" fill-rule="evenodd" d="M60.082 5.878L44.408 32 28.735 5.878h31.347zM15.673 0l15.674 26.122H0L15.673 0z"/></svg>
+        </div>
+        <div class="menu-2">
+          <a href="index.html" class="link-2">Home</a>
+          <a href="#Portfolio" class="link-2">Portfolio</a>
+          <a href="#contact" class="link-2">Contact Me</a>
+        </div>
+      </div>
+      <div class="right-footer">
+        <div class="social-icons">
+          <ul>
+            <li><i class="fab fa-github" aria-hidden="true"></i></li>
+            <li><i class="fab fa-twitter" aria-hidden="true"></i></li>
+            <li><i class="fab fa-linkedin" aria-hidden="true"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
