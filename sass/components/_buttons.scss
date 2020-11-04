@@ -37,9 +37,16 @@
   }
 }
 
-.contact-btn {
-  button {
+.visit-btn {
+  margin-top: 32px;
+  
+  a {
     @include white-btn;
-    cursor: pointer;
+  }
+}
+
+.contact-btn {
+  a {
+    @include white-btn;
   }
 }

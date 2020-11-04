@@ -173,13 +173,6 @@ footer {
     }
   }
 
-  .visit-btn {
-    button {
-      @include white-btn;
-      cursor: pointer;
-    }
-  }
-
   .right-desc {
     padding-left: 32px;
     width: 645px;
@@ -217,10 +210,14 @@ footer {
   // padding: 16px 0;
 
   .prev-next-1, .prev-next-2 {
-    // border: 2px solid red;
     margin: 16px 0 48px 0;
     padding: 16px 0;
     width: 100%;
+
+    a {
+      color: #33323D;
+      text-decoration: none;
+    }
 
     .previous, .next {
       display: flex;
