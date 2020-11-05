@@ -54,7 +54,7 @@
 }
 
 .visit-btn {
-  margin-top: 32px;
+  margin-top: 36px;
 }
 
 .visit-btn a {
@@ -278,7 +278,7 @@ footer .real-footer .social-icons li {
 
 footer .real-footer .social-icons .fab {
   color: #EAEAEB;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .project {
@@ -291,16 +291,18 @@ footer .real-footer .social-icons .fab {
   border-bottom: 1px solid #EAEAEB;
   border-top: 1px solid #EAEAEB;
   float: left;
-  height: 27rem;
+  height: 28.5rem;
   margin-right: 4.2rem;
 }
 
 .project .left-desc h2 {
+  color: #33323D;
   font-family: 'Ibarra Real Nova', serif;
-  font-size: 32px;
+  font-size: 36px;
 }
 
 .project .left-desc p {
+  color: #33323db6;
   font-family: 'Public Sans', sans-serif;
   font-size: 15px;
   line-height: 30px;
@@ -308,6 +310,7 @@ footer .real-footer .social-icons .fab {
 
 .project .left-desc .project-lang {
   color: #5FB4A2;
+  font-weight: bold;
 }
 
 .project .right-desc {
@@ -316,15 +319,17 @@ footer .real-footer .social-icons .fab {
 }
 
 .project .right-desc h3 {
+  color: #33323D;
   font-family: 'Ibarra Real Nova', serif;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 500;
   margin-top: 0;
 }
 
 .project .right-desc .background p {
+  color: #33323da7;
   font-family: 'Public Sans', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 30px;
   margin-bottom: 32px;
 }
@@ -347,8 +352,8 @@ footer .real-footer .social-icons .fab {
 }
 
 .project-slide .prev-next-1, .project-slide .prev-next-2 {
-  margin: 16px 0 48px 0;
-  padding: 16px 0;
+  margin: 24px 0 54px 0;
+  padding: 32px 0;
   width: 100%;
 }
 
@@ -368,14 +373,14 @@ footer .real-footer .social-icons .fab {
 
 .project-slide .prev-next-1 .previous .left-slide p, .project-slide .prev-next-1 .previous .right-slide p, .project-slide .prev-next-1 .next .left-slide p, .project-slide .prev-next-1 .next .right-slide p, .project-slide .prev-next-2 .previous .left-slide p, .project-slide .prev-next-2 .previous .right-slide p, .project-slide .prev-next-2 .next .left-slide p, .project-slide .prev-next-2 .next .right-slide p {
   font-family: 'Ibarra Real Nova', serif;
-  font-size: 24px;
-  margin: 0;
+  font-size: 28px;
+  margin: 3px 0;
 }
 
 .project-slide .prev-next-1 .previous .left-slide span, .project-slide .prev-next-1 .previous .right-slide span, .project-slide .prev-next-1 .next .left-slide span, .project-slide .prev-next-1 .next .right-slide span, .project-slide .prev-next-2 .previous .left-slide span, .project-slide .prev-next-2 .previous .right-slide span, .project-slide .prev-next-2 .next .left-slide span, .project-slide .prev-next-2 .next .right-slide span {
-  color: #bbbaba;
+  color: #a5a5a5;
   font-family: 'Public Sans', sans-serif;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .project-slide .prev-next-1 {
@@ -463,5 +468,86 @@ footer .real-footer .social-icons .fab {
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 44px;
+  border-top: 1px solid #EAEAEB;
+  margin-top: 66px;
+}
+
+.upper .left-title {
+  margin-right: 63px;
+}
+
+.upper .left-title h2 {
+  color: #33323D;
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 38px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.upper .sellout {
+  width: 39.5em;
+}
+
+.upper .sellout p {
+  color: #33323da7;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  margin: 0 0 24px 0;
+}
+
+.lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 44px;
+  border-top: 1px solid #EAEAEB;
+  margin-top: 32px;
+}
+
+.lower h2 {
+  color: #33323D;
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 38px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.lower .contact-form {
+  width: 39.5em;
+  margin-bottom: 72px;
+}
+
+.social-icons-2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-icons-2 li {
+  float: left;
+  padding-right: 0.7rem;
+}
+
+.social-icons-2 .fab {
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */
