@@ -41,7 +41,7 @@ body {
     p {
       color:#33323D;
       font-family: 'Ibarra Real Nova', serif;
-      font-size: 42px;
+      font-size: 45px;
       font-weight: bold;
       margin-right: 28px;
     }
@@ -69,6 +69,7 @@ body {
     }
 
     p {
+      color: #33323db6;
       font-family: 'Public Sans', sans-serif;
       font-size: 16px;
       line-height: 30px;
@@ -125,7 +126,7 @@ footer {
       }
     }
 
-    .social-icons {
+    .social-icons { // Social icons for Footer
       ul {
         display: flex;
         align-items: center;
@@ -303,6 +304,7 @@ footer {
     }
 
     p {
+      color: #33323db6;
       font-family: 'Public Sans', sans-serif;
       font-size: 14px;
       line-height: 30px;
@@ -400,7 +402,7 @@ footer {
   }
 }
 
-.social-icons-2 {
+.social-icons-2 { // Social icons for Contact Me page
   ul {
     display: flex;
     align-items: center;
