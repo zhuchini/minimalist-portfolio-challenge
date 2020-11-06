@@ -35,6 +35,11 @@
   a {
     @include white-btn;
   }
+
+  a:hover {
+    background-color: #33323D;
+    color: #FAFAFA;
+  }
 }
 
 .visit-btn {
@@ -43,10 +48,20 @@
   a {
     @include white-btn;
   }
+
+  a:hover {
+    background-color: #33323D;
+    color: #FAFAFA;
+  }
 }
 
 .contact-btn {
   a {
     @include white-btn;
+  }
+
+  a:hover {
+    background-color: #33323D;
+    color: #FAFAFA;
   }
 }
