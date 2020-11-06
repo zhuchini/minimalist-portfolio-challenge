@@ -516,6 +516,7 @@ footer .real-footer .social-icons .fab {
   padding-top: 44px;
   border-top: 1px solid #EAEAEB;
   margin-top: 32px;
+  padding-bottom: 44px;
 }
 
 .lower h2 {
@@ -529,6 +530,61 @@ footer .real-footer .social-icons .fab {
 .lower .contact-form {
   width: 39.5em;
   margin-bottom: 72px;
+}
+
+.lower .contact-form label {
+  color: #33323dd0;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.lower .contact-form input[type=text], .lower .contact-form input[type=email], .lower .contact-form select, .lower .contact-form textarea {
+  background-color: #e4e3e3;
+  border: 1px solid #EAEAEB;
+  /* Gray border */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  font-family: 'Public Sans', sans-serif;
+  font-size: 12px;
+  margin-top: 12px;
+  margin-bottom: 24px;
+  padding: 16px;
+  resize: none;
+  width: 100%;
+}
+
+.lower .contact-form ::-webkit-input-placeholder {
+  color: #a2a2a2;
+}
+
+.lower .contact-form :-ms-input-placeholder {
+  color: #a2a2a2;
+}
+
+.lower .contact-form ::-ms-input-placeholder {
+  color: #a2a2a2;
+}
+
+.lower .contact-form ::placeholder {
+  color: #a2a2a2;
+}
+
+.lower .contact-form input[type=submit] {
+  background-color: #203A4C;
+  border: none;
+  color: #FAFAFA;
+  cursor: pointer;
+  font-family: 'Public Sans', serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  padding: 18px 40px;
+  text-transform: uppercase;
+}
+
+.lower .contact-form input[type=submit]:hover {
+  background-color: #5fb4a2;
 }
 
 .social-icons-2 ul {

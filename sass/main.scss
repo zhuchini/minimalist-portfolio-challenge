@@ -348,6 +348,7 @@ footer {
 .lower {
   @include contact-me-div;
   margin-top: 32px;
+  padding-bottom: 44px;
 
   h2 {
     @include contact-h2;
@@ -356,6 +357,46 @@ footer {
   .contact-form {
     width: 39.5em;
     margin-bottom: 72px;
+
+    label {
+      color: #33323dd0;
+      font-family: 'Public Sans', sans-serif;
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    input[type=text], input[type=email], select, textarea {
+      background-color: #e4e3e3;
+      border: 1px solid #EAEAEB;; /* Gray border */
+      box-sizing: border-box; /* Make sure that padding and width stays in place */
+      font-family: 'Public Sans', sans-serif;
+      font-size: 12px;
+      margin-top: 12px;
+      margin-bottom: 24px;
+      padding: 16px;
+      resize: none;
+      width: 100%;
+    }
+
+    ::placeholder {
+      color: #a2a2a2;
+    }
+
+    input[type=submit] {
+      background-color: #203A4C;
+      border: none;
+      color: #FAFAFA;
+      cursor: pointer;
+      font-family: 'Public Sans', serif;
+      font-size: 11px;
+      letter-spacing: 2px;
+      padding: 18px 40px;
+      text-transform: uppercase;
+    }
+
+    input[type=submit]:hover {
+      background-color: #5fb4a2;
+    }
   }
 }
 
