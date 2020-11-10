@@ -604,6 +604,10 @@ footer .real-footer .social-icons .fab {
   background-color: #5fb4a2;
 }
 
+:required {
+  border: 1px solid #F43030;
+}
+
 .social-icons-2 ul {
   display: -webkit-box;
   display: -ms-flexbox;

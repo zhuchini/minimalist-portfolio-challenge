@@ -400,7 +400,11 @@ footer {
       background-color: #5fb4a2;
     }
   }
+
 }
+    :required {
+      border: 1px solid #F43030;
+    }
 
 .social-icons-2 { // Social icons for Contact Me page
   ul {
