@@ -302,6 +302,18 @@ footer .real-footer .social-icons .fab {
   font-size: 1.5rem;
 }
 
+footer .real-footer .social-icons li:hover > .fa-github {
+  color: #787878;
+}
+
+footer .real-footer .social-icons li:hover > .fa-twitter {
+  color: #1a91da;
+}
+
+footer .real-footer .social-icons li:hover > .fa-linkedin {
+  color: #0a66c2;
+}
+
 .project {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -653,6 +665,18 @@ footer .real-footer .social-icons .fab {
 
 .social-icons-2 .fab {
   font-size: 1.5rem;
+}
+
+.social-icons-2 li:hover > .fa-github {
+  color: #787878;
+}
+
+.social-icons-2 li:hover > .fa-twitter {
+  color: #1a91da;
+}
+
+.social-icons-2 li:hover > .fa-linkedin {
+  color: #0a66c2;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
