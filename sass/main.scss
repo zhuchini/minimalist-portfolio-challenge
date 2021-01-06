@@ -129,8 +129,8 @@ footer {
       }
     }
 
+    // Social icons for Footer
     .social-icons {
-      // Social icons for Footer
       ul {
         display: flex;
         align-items: center;
@@ -147,9 +147,17 @@ footer {
         font-size: 1.5rem;
       }
 
-      // .fa-github:hover {
+      li:hover > .fa-github {
+        color: #787878;
+      }
 
-      // }
+      li:hover > .fa-twitter {
+        color: #1a91da;
+      }
+
+      li:hover > .fa-linkedin {
+        color: #0a66c2;
+      }
     }
   }
 }
@@ -415,8 +423,8 @@ footer {
   border: 1px solid #f43030;
 }
 
+// Social icons for Contact Me page
 .social-icons-2 {
-  // Social icons for Contact Me page
   ul {
     display: flex;
     align-items: center;
@@ -432,6 +440,18 @@ footer {
   .fab {
     // color: #EAEAEB;
     font-size: 1.5rem;
+  }
+
+  li:hover > .fa-github {
+    color: #787878;
+  }
+
+  li:hover > .fa-twitter {
+    color: #1a91da;
+  }
+
+  li:hover > .fa-linkedin {
+    color: #0a66c2;
   }
 }
 
