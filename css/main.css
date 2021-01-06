@@ -137,13 +137,16 @@
 }
 
 body {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   margin: 0;
+  position: relative;
+  min-height: 100vh;
 }
 
 .container {
   margin: auto;
   width: 1080px;
+  padding-bottom: 1rem;
 }
 
 .banner {
@@ -156,7 +159,7 @@ body {
 }
 
 .banner .banner-text {
-  background-color: white;
+  background-color: #fafafa;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -165,15 +168,15 @@ body {
 }
 
 .banner .banner-text p {
-  color: #33323D;
-  font-family: 'Ibarra Real Nova', serif;
+  color: #33323d;
+  font-family: "Ibarra Real Nova", serif;
   font-size: 45px;
   font-weight: bold;
   margin-right: 28px;
 }
 
 .profile {
-  color: #33323D;
+  color: #33323d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,19 +189,19 @@ body {
 }
 
 .profile .profile-txt {
-  border-bottom: 1px solid #EAEAEB;
-  border-top: 1px solid #EAEAEB;
+  border-bottom: 1px solid #eaeaeb;
+  border-top: 1px solid #eaeaeb;
   margin: 0 112px;
 }
 
 .profile .profile-txt h1 {
-  font-family: 'Ibarra Real Nova', serif;
+  font-family: "Ibarra Real Nova", serif;
   margin-top: 40px;
 }
 
 .profile .profile-txt p {
   color: #33323db6;
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   line-height: 30px;
 }
@@ -221,16 +224,18 @@ body {
 }
 
 .contact-footer .contact-txt h2 {
-  font-family: 'Ibarra Real Nova', serif;
+  font-family: "Ibarra Real Nova", serif;
   font-size: 36px;
 }
 
 .contact-footer .line {
-  color: #EAEAEB;
+  color: #eaeaeb;
 }
 
 footer {
-  background-color: #33323D;
+  background-color: #33323d;
+  position: absolute;
+  bottom: -100px;
   width: 100%;
 }
 
@@ -273,7 +278,7 @@ footer .real-footer .left-footer .menu-2 .link-2 {
   letter-spacing: 1px;
   -webkit-transform: scale(1, 0.9);
           transform: scale(1, 0.9);
-  color: #EAEAEB;
+  color: #eaeaeb;
   padding: 10px 0;
 }
 
@@ -293,7 +298,7 @@ footer .real-footer .social-icons li {
 }
 
 footer .real-footer .social-icons .fab {
-  color: #EAEAEB;
+  color: #eaeaeb;
   font-size: 1.5rem;
 }
 
@@ -304,28 +309,28 @@ footer .real-footer .social-icons .fab {
 }
 
 .project .left-desc {
-  border-bottom: 1px solid #EAEAEB;
-  border-top: 1px solid #EAEAEB;
+  border-bottom: 1px solid #eaeaeb;
+  border-top: 1px solid #eaeaeb;
   float: left;
   height: 28.5rem;
   margin-right: 4.2rem;
 }
 
 .project .left-desc h2 {
-  color: #33323D;
-  font-family: 'Ibarra Real Nova', serif;
+  color: #33323d;
+  font-family: "Ibarra Real Nova", serif;
   font-size: 36px;
 }
 
 .project .left-desc p {
   color: #33323db6;
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 15px;
   line-height: 30px;
 }
 
 .project .left-desc .project-lang {
-  color: #5FB4A2;
+  color: #5fb4a2;
   font-weight: bold;
 }
 
@@ -335,8 +340,8 @@ footer .real-footer .social-icons .fab {
 }
 
 .project .right-desc h3 {
-  color: #33323D;
-  font-family: 'Ibarra Real Nova', serif;
+  color: #33323d;
+  font-family: "Ibarra Real Nova", serif;
   font-size: 26px;
   font-weight: 500;
   margin-top: 0;
@@ -344,7 +349,7 @@ footer .real-footer .social-icons .fab {
 
 .project .right-desc .background p {
   color: #33323da7;
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   line-height: 30px;
   margin-bottom: 32px;
@@ -367,18 +372,23 @@ footer .real-footer .social-icons .fab {
           justify-content: space-between;
 }
 
-.project-slide .prev-next-1, .project-slide .prev-next-2 {
+.project-slide .prev-next-1,
+.project-slide .prev-next-2 {
   margin: 24px 0 54px 0;
   padding: 32px 0;
   width: 100%;
 }
 
-.project-slide .prev-next-1 a, .project-slide .prev-next-2 a {
-  color: #33323D;
+.project-slide .prev-next-1 a,
+.project-slide .prev-next-2 a {
+  color: #33323d;
   text-decoration: none;
 }
 
-.project-slide .prev-next-1 .previous, .project-slide .prev-next-1 .next, .project-slide .prev-next-2 .previous, .project-slide .prev-next-2 .next {
+.project-slide .prev-next-1 .previous,
+.project-slide .prev-next-1 .next,
+.project-slide .prev-next-2 .previous,
+.project-slide .prev-next-2 .next {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -387,22 +397,36 @@ footer .real-footer .social-icons .fab {
           align-items: center;
 }
 
-.project-slide .prev-next-1 .previous .left-slide p, .project-slide .prev-next-1 .previous .right-slide p, .project-slide .prev-next-1 .next .left-slide p, .project-slide .prev-next-1 .next .right-slide p, .project-slide .prev-next-2 .previous .left-slide p, .project-slide .prev-next-2 .previous .right-slide p, .project-slide .prev-next-2 .next .left-slide p, .project-slide .prev-next-2 .next .right-slide p {
-  font-family: 'Ibarra Real Nova', serif;
+.project-slide .prev-next-1 .previous .left-slide p,
+.project-slide .prev-next-1 .previous .right-slide p,
+.project-slide .prev-next-1 .next .left-slide p,
+.project-slide .prev-next-1 .next .right-slide p,
+.project-slide .prev-next-2 .previous .left-slide p,
+.project-slide .prev-next-2 .previous .right-slide p,
+.project-slide .prev-next-2 .next .left-slide p,
+.project-slide .prev-next-2 .next .right-slide p {
+  font-family: "Ibarra Real Nova", serif;
   font-size: 28px;
   margin: 3px 0;
 }
 
-.project-slide .prev-next-1 .previous .left-slide span, .project-slide .prev-next-1 .previous .right-slide span, .project-slide .prev-next-1 .next .left-slide span, .project-slide .prev-next-1 .next .right-slide span, .project-slide .prev-next-2 .previous .left-slide span, .project-slide .prev-next-2 .previous .right-slide span, .project-slide .prev-next-2 .next .left-slide span, .project-slide .prev-next-2 .next .right-slide span {
+.project-slide .prev-next-1 .previous .left-slide span,
+.project-slide .prev-next-1 .previous .right-slide span,
+.project-slide .prev-next-1 .next .left-slide span,
+.project-slide .prev-next-1 .next .right-slide span,
+.project-slide .prev-next-2 .previous .left-slide span,
+.project-slide .prev-next-2 .previous .right-slide span,
+.project-slide .prev-next-2 .next .left-slide span,
+.project-slide .prev-next-2 .next .right-slide span {
   color: #a5a5a5;
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 14px;
 }
 
 .project-slide .prev-next-1 {
-  border-bottom: 1px solid #EAEAEB;
-  border-right: 1px solid #EAEAEB;
-  border-top: 1px solid #EAEAEB;
+  border-bottom: 1px solid #eaeaeb;
+  border-right: 1px solid #eaeaeb;
+  border-top: 1px solid #eaeaeb;
 }
 
 .project-slide .prev-next-1 .previous svg {
@@ -410,8 +434,8 @@ footer .real-footer .social-icons .fab {
 }
 
 .project-slide .prev-next-2 {
-  border-bottom: 1px solid #EAEAEB;
-  border-top: 1px solid #EAEAEB;
+  border-bottom: 1px solid #eaeaeb;
+  border-top: 1px solid #eaeaeb;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -442,8 +466,8 @@ footer .real-footer .social-icons .fab {
 }
 
 .project-preview .project-desc {
-  border-bottom: 1px solid #EAEAEB;
-  border-top: 1px solid #EAEAEB;
+  border-bottom: 1px solid #eaeaeb;
+  border-top: 1px solid #eaeaeb;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -458,7 +482,7 @@ footer .real-footer .social-icons .fab {
 }
 
 .project-preview .project-desc h2 {
-  font-family: 'Ibarra Real Nova', serif;
+  font-family: "Ibarra Real Nova", serif;
   font-size: 32px;
   font-weight: 500;
   margin: 0;
@@ -466,7 +490,7 @@ footer .real-footer .social-icons .fab {
 
 .project-preview .project-desc p {
   color: #33323db6;
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 14px;
   line-height: 30px;
   margin-bottom: 20px;
@@ -517,7 +541,7 @@ footer .real-footer .social-icons .fab {
 
 .upper .sellout p {
   color: #33323da7;
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 16px;
   line-height: 30px;
   margin: 0 0 24px 0;
@@ -551,19 +575,22 @@ footer .real-footer .social-icons .fab {
 
 .lower .contact-form label {
   color: #33323dd0;
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 12px;
   font-weight: 900;
 }
 
-.lower .contact-form input[type=text], .lower .contact-form input[type=email], .lower .contact-form select, .lower .contact-form textarea {
+.lower .contact-form input[type="text"],
+.lower .contact-form input[type="email"],
+.lower .contact-form select,
+.lower .contact-form textarea {
   background-color: #e4e3e3;
-  border: 1px solid #EAEAEB;
+  border: 1px solid #eaeaeb;
   /* Gray border */
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   /* Make sure that padding and width stays in place */
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 12px;
   margin-top: 12px;
   margin-bottom: 24px;
@@ -588,24 +615,24 @@ footer .real-footer .social-icons .fab {
   color: #a2a2a2;
 }
 
-.lower .contact-form input[type=submit] {
-  background-color: #203A4C;
+.lower .contact-form input[type="submit"] {
+  background-color: #203a4c;
   border: none;
-  color: #FAFAFA;
+  color: #fafafa;
   cursor: pointer;
-  font-family: 'Public Sans', serif;
+  font-family: "Public Sans", serif;
   font-size: 11px;
   letter-spacing: 2px;
   padding: 18px 40px;
   text-transform: uppercase;
 }
 
-.lower .contact-form input[type=submit]:hover {
+.lower .contact-form input[type="submit"]:hover {
   background-color: #5fb4a2;
 }
 
 :required {
-  border: 1px solid #F43030;
+  border: 1px solid #f43030;
 }
 
 .social-icons-2 ul {
@@ -626,5 +653,17 @@ footer .real-footer .social-icons .fab {
 
 .social-icons-2 .fab {
   font-size: 1.5rem;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .menu {
+    display: hidden;
+  }
+  .banner img {
+    width: 100%;
+    height: 16em;
+  }
 }
 /*# sourceMappingURL=main.css.map */

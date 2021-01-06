@@ -1,23 +1,24 @@
 // Base
-
-@import 'base/variables';
-@import 'base/mixins';
-@import 'base/reset';
+@import "base/variables";
+@import "base/mixins";
+@import "base/reset";
 
 // Components
-
-@import 'components/typography';
-@import 'components/buttons';
-@import 'components/navigation';
+@import "components/typography";
+@import "components/buttons";
+@import "components/navigation";
 
 body {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   margin: 0;
+  position: relative;
+  min-height: 100vh;
 }
 
 .container {
   margin: auto;
   width: 1080px;
+  padding-bottom: 1rem;
 }
 
 // ------------------------------------------- *** Banner *** ----------------------------------------------
@@ -31,7 +32,7 @@ body {
   }
 
   .banner-text {
-    background-color: white;
+    background-color: #fafafa;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -39,8 +40,8 @@ body {
     width: 27em;
 
     p {
-      color:#33323D;
-      font-family: 'Ibarra Real Nova', serif;
+      color: #33323d;
+      font-family: "Ibarra Real Nova", serif;
       font-size: 45px;
       font-weight: bold;
       margin-right: 28px;
@@ -49,7 +50,7 @@ body {
 }
 
 .profile {
-  color: #33323D;
+  color: #33323d;
   display: flex;
   margin-top: 7em;
   margin-bottom: 6em;
@@ -59,18 +60,18 @@ body {
   }
 
   .profile-txt {
-    border-bottom: 1px solid #EAEAEB;
-    border-top: 1px solid #EAEAEB;
+    border-bottom: 1px solid #eaeaeb;
+    border-top: 1px solid #eaeaeb;
     margin: 0 112px;
 
     h1 {
-      font-family: 'Ibarra Real Nova', serif;
+      font-family: "Ibarra Real Nova", serif;
       margin-top: 40px;
     }
 
     p {
       color: #33323db6;
-      font-family: 'Public Sans', sans-serif;
+      font-family: "Public Sans", sans-serif;
       font-size: 16px;
       line-height: 30px;
     }
@@ -89,18 +90,20 @@ body {
     width: 20em;
 
     h2 {
-      font-family: 'Ibarra Real Nova', serif;
+      font-family: "Ibarra Real Nova", serif;
       font-size: 36px;
     }
   }
 
   .line {
-    color: #EAEAEB;
+    color: #eaeaeb;
   }
 }
 
 footer {
-  background-color: #33323D;
+  background-color: #33323d;
+  position: absolute;
+  bottom: -100px;
   width: 100%;
 
   .real-footer {
@@ -111,22 +114,23 @@ footer {
     margin: auto;
     width: 1080px;
 
-    .left-footer{
+    .left-footer {
       align-items: center;
       display: flex;
-    
+
       .menu-2 {
         height: 4em;
-      
+
         .link-2 {
           @include nav-links;
-          color: #EAEAEB;
+          color: #eaeaeb;
           padding: 10px 0;
         }
       }
     }
 
-    .social-icons { // Social icons for Footer
+    .social-icons {
+      // Social icons for Footer
       ul {
         display: flex;
         align-items: center;
@@ -139,12 +143,12 @@ footer {
       }
 
       .fab {
-        color: #EAEAEB;
+        color: #eaeaeb;
         font-size: 1.5rem;
       }
 
       // .fa-github:hover {
-        
+
       // }
     }
   }
@@ -156,27 +160,27 @@ footer {
   display: flex;
 
   .left-desc {
-    border-bottom: 1px solid #EAEAEB;
-    border-top: 1px solid #EAEAEB;
+    border-bottom: 1px solid #eaeaeb;
+    border-top: 1px solid #eaeaeb;
     float: left;
     height: 28.5rem;
     margin-right: 4.2rem;
 
     h2 {
-      color: #33323D;
-      font-family: 'Ibarra Real Nova', serif;
+      color: #33323d;
+      font-family: "Ibarra Real Nova", serif;
       font-size: 36px;
     }
 
     p {
       color: #33323db6;
-      font-family: 'Public Sans', sans-serif;
+      font-family: "Public Sans", sans-serif;
       font-size: 15px;
       line-height: 30px;
     }
 
-    .project-lang{
-      color: #5FB4A2;
+    .project-lang {
+      color: #5fb4a2;
       font-weight: bold;
     }
   }
@@ -186,17 +190,17 @@ footer {
     width: 645px;
 
     h3 {
-      color: #33323D;
-      font-family: 'Ibarra Real Nova', serif;
+      color: #33323d;
+      font-family: "Ibarra Real Nova", serif;
       font-size: 26px;
       font-weight: 500;
       margin-top: 0;
     }
 
-    .background {    
+    .background {
       p {
         color: #33323da7;
-        font-family: 'Public Sans', sans-serif;
+        font-family: "Public Sans", sans-serif;
         font-size: 16px;
         line-height: 30px;
         margin-bottom: 32px;
@@ -217,29 +221,32 @@ footer {
   display: flex;
   justify-content: space-between;
 
-  .prev-next-1, .prev-next-2 {
+  .prev-next-1,
+  .prev-next-2 {
     margin: 24px 0 54px 0;
     padding: 32px 0;
     width: 100%;
 
     a {
-      color: #33323D;
+      color: #33323d;
       text-decoration: none;
     }
 
-    .previous, .next {
+    .previous,
+    .next {
       display: flex;
       align-items: center;
-      
-      .left-slide, .right-slide {
+
+      .left-slide,
+      .right-slide {
         p {
-          font-family: 'Ibarra Real Nova', serif;
+          font-family: "Ibarra Real Nova", serif;
           font-size: 28px;
           margin: 3px 0;
         }
         span {
           color: #a5a5a5;
-          font-family: 'Public Sans', sans-serif;
+          font-family: "Public Sans", sans-serif;
           font-size: 14px;
         }
       }
@@ -247,9 +254,9 @@ footer {
   }
 
   .prev-next-1 {
-    border-bottom: 1px solid #EAEAEB;
-    border-right: 1px solid #EAEAEB;
-    border-top: 1px solid #EAEAEB;
+    border-bottom: 1px solid #eaeaeb;
+    border-right: 1px solid #eaeaeb;
+    border-top: 1px solid #eaeaeb;
 
     .previous {
       svg {
@@ -259,14 +266,14 @@ footer {
   }
 
   .prev-next-2 {
-    border-bottom: 1px solid #EAEAEB;
-    border-top: 1px solid #EAEAEB;
+    border-bottom: 1px solid #eaeaeb;
+    border-top: 1px solid #eaeaeb;
     display: flex;
     justify-content: flex-end;
 
     .next {
       text-align: right;
-      
+
       svg {
         padding-left: 20px;
       }
@@ -289,15 +296,15 @@ footer {
   }
 
   .project-desc {
-    border-bottom: 1px solid #EAEAEB;
-    border-top: 1px solid #EAEAEB;
+    border-bottom: 1px solid #eaeaeb;
+    border-top: 1px solid #eaeaeb;
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin: 0 120px 0 104px;
 
     h2 {
-      font-family: 'Ibarra Real Nova', serif;
+      font-family: "Ibarra Real Nova", serif;
       font-size: 32px;
       font-weight: 500;
       margin: 0;
@@ -305,7 +312,7 @@ footer {
 
     p {
       color: #33323db6;
-      font-family: 'Public Sans', sans-serif;
+      font-family: "Public Sans", sans-serif;
       font-size: 14px;
       line-height: 30px;
       margin-bottom: 20px;
@@ -339,7 +346,7 @@ footer {
 
     p {
       color: #33323da7;
-      font-family: 'Public Sans', sans-serif;
+      font-family: "Public Sans", sans-serif;
       font-size: 16px;
       line-height: 30px;
       margin: 0 0 24px 0;
@@ -362,16 +369,19 @@ footer {
 
     label {
       color: #33323dd0;
-      font-family: 'Public Sans', sans-serif;
+      font-family: "Public Sans", sans-serif;
       font-size: 12px;
       font-weight: 900;
     }
 
-    input[type=text], input[type=email], select, textarea {
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
       background-color: #e4e3e3;
-      border: 1px solid #EAEAEB;; /* Gray border */
+      border: 1px solid #eaeaeb; /* Gray border */
       box-sizing: border-box; /* Make sure that padding and width stays in place */
-      font-family: 'Public Sans', sans-serif;
+      font-family: "Public Sans", sans-serif;
       font-size: 12px;
       margin-top: 12px;
       margin-bottom: 24px;
@@ -384,29 +394,29 @@ footer {
       color: #a2a2a2;
     }
 
-    input[type=submit] {
-      background-color: #203A4C;
+    input[type="submit"] {
+      background-color: #203a4c;
       border: none;
-      color: #FAFAFA;
+      color: #fafafa;
       cursor: pointer;
-      font-family: 'Public Sans', serif;
+      font-family: "Public Sans", serif;
       font-size: 11px;
       letter-spacing: 2px;
       padding: 18px 40px;
       text-transform: uppercase;
     }
 
-    input[type=submit]:hover {
+    input[type="submit"]:hover {
       background-color: #5fb4a2;
     }
   }
-
 }
-    :required {
-      border: 1px solid #F43030;
-    }
+:required {
+  border: 1px solid #f43030;
+}
 
-.social-icons-2 { // Social icons for Contact Me page
+.social-icons-2 {
+  // Social icons for Contact Me page
   ul {
     display: flex;
     align-items: center;
@@ -422,5 +432,32 @@ footer {
   .fab {
     // color: #EAEAEB;
     font-size: 1.5rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  // .banner {
+  //   img {
+  //     width: 100%;
+  //     height: 23rem;
+  //   }
+  // }
+}
+
+@media only screen and (max-width: 600px) {
+  .menu {
+    display: hidden;
+  }
+
+  .banner {
+    img {
+      width: 100%;
+      height: 16em;
+    }
   }
 }
