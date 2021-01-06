@@ -470,8 +470,10 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-  .menu {
-    display: hidden;
+  .header {
+    .menu {
+      display: hidden;
+    }
   }
 
   .banner {
