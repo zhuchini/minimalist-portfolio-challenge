@@ -682,7 +682,7 @@ footer .real-footer .social-icons li:hover > .fa-linkedin {
 /* Medium devices (landscape tablets, 768px and up) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
-  .menu {
+  .header .menu {
     display: hidden;
   }
   .banner img {
