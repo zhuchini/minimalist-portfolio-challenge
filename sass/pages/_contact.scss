@@ -1,0 +1,38 @@
+.upper {
+  @include contact-me-div;
+  margin-top: 66px;
+
+  .left-title {
+    margin-right: 63px;
+
+    h2 {
+      @include contact-h2;
+    }
+  }
+
+  .sellout {
+    width: 39.5em;
+
+    p {
+      color: #33323da7;
+      font-family: "Public Sans", sans-serif;
+      font-size: 16px;
+      line-height: 30px;
+      margin: 0 0 24px 0;
+    }
+  }
+}
+
+.lower {
+  @include contact-me-div;
+  margin-top: 32px;
+  padding-bottom: 44px;
+
+  h2 {
+    @include contact-h2;
+  }
+}
+
+:required {
+  border: 1px solid #f43030;
+}

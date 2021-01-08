@@ -1,0 +1,43 @@
+.project-preview {
+  display: flex;
+  height: 30em;
+  margin: 64px 0;
+
+  .portfolio-img {
+    img {
+      height: 100%;
+      width: 32.5em;
+    }
+  }
+
+  .project-desc {
+    border-bottom: 1px solid #eaeaeb;
+    border-top: 1px solid #eaeaeb;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 120px 0 104px;
+
+    h2 {
+      font-family: "Ibarra Real Nova", serif;
+      font-size: 32px;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    p {
+      color: #33323db6;
+      font-family: "Public Sans", sans-serif;
+      font-size: 14px;
+      line-height: 30px;
+      margin-bottom: 20px;
+    }
+
+    .visit-btn {
+      button {
+        @include white-btn;
+        cursor: pointer;
+      }
+    }
+  }
+}
