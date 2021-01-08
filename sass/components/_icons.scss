@@ -1,0 +1,13 @@
+// Footer
+.social-icons {
+  @include social-icons;
+
+  .fab {
+    color: #eaeaeb;
+  }
+}
+
+// Contact Me Page
+.social-icons-2 {
+  @include social-icons;
+}
