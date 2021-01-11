@@ -8,8 +8,19 @@
   align-items: center;
 
   .menu {
+    .fa-bars {
+      display: none;
+
+      @include mobile {
+        display: block;
+      }
+    }
     a.active-page {
       color: #5fb4a2;
+    }
+
+    @include mobile {
+      display: none;
     }
   }
 }

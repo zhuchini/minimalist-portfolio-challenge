@@ -3,9 +3,10 @@ const headerContentMarkup = `
       <svg xmlns="http://www.w3.org/2000/svg" width="61" height="32"><path fill="#33323D" fill-rule="evenodd" d="M60.082 5.878L44.408 32 28.735 5.878h31.347zM15.673 0l15.674 26.122H0L15.673 0z"/></svg>
     </div>
     <div class="menu">
-      <a href="index.html" class="link">Home</a>
-      <a href="portfolio.html" class="link">Portfolio</a>
-      <a href="contact.html" class="link">Contact Me</a>
+      <a href="index.html?linkindex=0" class="link">Home</a>
+      <a href="portfolio.html?linkindex=1" class="link">Portfolio</a>
+      <a href="contact.html?linkindex=2" class="link">Contact Me</a>
+      <i class="fas fa-bars"></i>
     </div>
 `
 const footerContentMarkup = `
@@ -14,9 +15,9 @@ const footerContentMarkup = `
       <svg xmlns="http://www.w3.org/2000/svg" width="61" height="32"><path fill="#FAFAFA" fill-rule="evenodd" d="M60.082 5.878L44.408 32 28.735 5.878h31.347zM15.673 0l15.674 26.122H0L15.673 0z"/></svg>
     </div>
     <div class="menu-2">
-      <a href="index.html" class="link-2">Home</a>
-      <a href="portfolio.html" class="link-2">Portfolio</a>
-      <a href="contact.html" class="link-2">Contact Me</a>
+      <a href="index.html?linkindex=0" class="link-2">Home</a>
+      <a href="portfolio.html?linkindex=1" class="link-2">Portfolio</a>
+      <a href="contact.html?linkindex=2" class="link-2">Contact Me</a>
     </div>
   </div>
   <div class="right-footer">
@@ -35,23 +36,29 @@ headerContainer.insertAdjacentHTML('afterbegin', headerContentMarkup);
 const footerContainer = document.querySelector('.real-footer');
 footerContainer.insertAdjacentHTML('afterbegin', footerContentMarkup);
 
-// const linkEl = document.querySelectorAll('.link');
+function getParamByKey(key) {
+  const params = new URLSearchParams(document.location.search.substring(1));
+  let value = params.get(key);
 
-// for (let i = 0; i < linkEl.length; i++) {
-//   linkEl[i].addEventListener('click', function () {
-//     linkEl.classList.add('active-page');
-//   });
-// }
+  // console.log(value ? value : 0);
+  return value ? value : 0
+}
 
-// const navLinks = document.querySelector('.link');
+// let activeIndex = Number.parseInt(getParamByKey('linkindex'));
+// let testArr = ['test', '2', 'three'];
 
-// navLinks.addEventListener('click', function() {
-//   navLinks.classList.add('active-page');
-// })
+// testArr.forEach((val, index) => console.log(index === activeIndex))
 
-$(document).ready(function() {
-  $("a").click(function() {
-    $("a.active-page").addClass("active-page");
-    // $(this).addClass("active-page");
+function highlightActiveLink() {
+  // call getParamByKey('linkindex')
+  const activeLinkIndex = Number.parseInt(getParamByKey('linkindex'));
+
+  document.querySelectorAll('.link').forEach((linkNode, index) => {
+    if (activeLinkIndex === index) {
+      // add active-page to proper link node
+      linkNode.classList.add('active-page')
+    }
   });
-});
+}
+
+highlightActiveLink();

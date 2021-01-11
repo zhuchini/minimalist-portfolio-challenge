@@ -1,12 +1,24 @@
 body {
   background-color: #fafafa;
-  margin: 0;
+  // margin: 0;
   position: relative;
   min-height: 100vh;
+
+  @include mobile {
+    margin: 24px;
+  }
+
+  @include tablet-portrait-up {
+    margin: 24px;
+  }
 }
 
 .container {
   margin: auto;
   width: 1080px;
   padding-bottom: 1rem;
+
+  @include mobile {
+    width: 600px;
+  }
 }

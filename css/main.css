@@ -366,15 +366,32 @@ footer .real-footer .left-footer .menu-2 .link-2 {
 
 body {
   background-color: #fafafa;
-  margin: 0;
   position: relative;
   min-height: 100vh;
+}
+
+@media (max-width: 599px) {
+  body {
+    margin: 24px;
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    margin: 24px;
+  }
 }
 
 .container {
   margin: auto;
   width: 1080px;
   padding-bottom: 1rem;
+}
+
+@media (max-width: 599px) {
+  .container {
+    width: 600px;
+  }
 }
 
 .header {
@@ -393,8 +410,24 @@ body {
           align-items: center;
 }
 
+.header .menu .fa-bars {
+  display: none;
+}
+
+@media (max-width: 599px) {
+  .header .menu .fa-bars {
+    display: block;
+  }
+}
+
 .header .menu a.active-page {
   color: #5fb4a2;
+}
+
+@media (max-width: 599px) {
+  .header .menu {
+    display: none;
+  }
 }
 
 .link {
