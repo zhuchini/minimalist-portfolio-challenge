@@ -2,11 +2,13 @@ const headerContentMarkup = `
     <div class="logo">
       <svg xmlns="http://www.w3.org/2000/svg" width="61" height="32"><path fill="#33323D" fill-rule="evenodd" d="M60.082 5.878L44.408 32 28.735 5.878h31.347zM15.673 0l15.674 26.122H0L15.673 0z"/></svg>
     </div>
-    <div class="menu">
+    <div class="menu" id="myTopNav">
       <a href="index.html?linkindex=0" class="link">Home</a>
       <a href="portfolio.html?linkindex=1" class="link">Portfolio</a>
       <a href="contact.html?linkindex=2" class="link">Contact Me</a>
-      <i class="fas fa-bars"></i>
+      <a href="javascript:void(0);" class="bar-icon" onclick="menuBarMobile()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
 `
 const footerContentMarkup = `
@@ -62,3 +64,12 @@ function highlightActiveLink() {
 }
 
 highlightActiveLink();
+
+function menuBarMobile() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "menu") {
+    x.className += " responsive";
+  } else {
+    x.className = "menu";
+  };
+};

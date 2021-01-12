@@ -1,26 +1,42 @@
 .header {
   margin: auto;
-  margin-bottom: 32px;
-  margin-top: 16px;
+  // margin-bottom: 32px;
+  // margin-top: 16px;
   max-width: 1080px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   .menu {
-    .fa-bars {
+    .bar-icon {
       display: none;
-
-      @include mobile {
-        display: block;
-      }
-    }
-    a.active-page {
-      color: #5fb4a2;
     }
 
     @include mobile {
-      display: none;
+      a:not(:first-child) {
+        display: none;
+      }
+      a.bar-icon {
+        float: right;
+        display: block;
+      }
+      .responsive {
+        position: relative;
+      }
+      .responsive .bar-icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
+
+    a.active-page {
+      color: #5fb4a2;
     }
   }
 }
