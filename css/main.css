@@ -1,61 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap");
-.banner {
-  margin: 48px 0 80px 0;
-  position: relative;
-}
-
-.banner img {
-  width: 100%;
-}
-
-.banner .banner-text {
-  background-color: #fafafa;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 22em;
-  width: 27em;
-}
-
-.banner .banner-text p {
-  color: #33323d;
-  font-family: "Ibarra Real Nova", serif;
-  font-size: 45px;
-  font-weight: bold;
-  margin-right: 28px;
-}
-
-.profile {
-  color: #33323d;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 7em;
-  margin-bottom: 6em;
-}
-
-.profile img {
-  width: 33em;
-}
-
-.profile .profile-txt {
-  border-bottom: 1px solid #eaeaeb;
-  border-top: 1px solid #eaeaeb;
-  margin: 0 112px;
-}
-
-.profile .profile-txt h1 {
-  font-family: "Ibarra Real Nova", serif;
-  margin-top: 40px;
-}
-
-.profile .profile-txt p {
-  color: #33323db6;
-  font-family: "Public Sans", sans-serif;
-  font-size: 16px;
-  line-height: 30px;
-}
-
 .banner-btn {
   cursor: pointer;
   display: -webkit-box;
@@ -345,11 +288,7 @@ footer .real-footer .left-footer {
   display: flex;
 }
 
-footer .real-footer .left-footer .menu-2 {
-  height: 4em;
-}
-
-footer .real-footer .left-footer .menu-2 .link-2 {
+footer .real-footer .left-footer .link-2 {
   margin: 16px 0 16px 44px;
   position: relative;
   text-decoration: none;
@@ -365,20 +304,9 @@ footer .real-footer .left-footer .menu-2 .link-2 {
 
 body {
   background-color: #fafafa;
+  margin: 0;
   position: relative;
   min-height: 100vh;
-}
-
-@media (max-width: 599px) {
-  body {
-    margin: 24px;
-  }
-}
-
-@media (min-width: 600px) {
-  body {
-    margin: 24px;
-  }
 }
 
 .container {
@@ -387,14 +315,16 @@ body {
   padding-bottom: 1rem;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   .container {
+    padding: 24px;
     width: 600px;
   }
 }
 
 .header {
   margin: auto;
+  margin-top: 16px;
   max-width: 1080px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -407,12 +337,22 @@ body {
           align-items: center;
 }
 
+@media (max-width: 600px) {
+  .header {
+    padding: 0 24px;
+  }
+}
+
 .header .menu .bar-icon {
   display: none;
 }
 
-@media (max-width: 599px) {
-  .header .menu a:not(:first-child) {
+.header .menu a.active-page {
+  color: #5fb4a2;
+}
+
+@media (max-width: 600px) {
+  .header .menu a {
     display: none;
   }
   .header .menu a.bar-icon {
@@ -432,10 +372,6 @@ body {
     display: block;
     text-align: left;
   }
-}
-
-.header .menu a.active-page {
-  color: #5fb4a2;
 }
 
 .link {
@@ -512,6 +448,106 @@ body {
 
 :required {
   border: 1px solid #f43030;
+}
+
+.banner {
+  margin: 48px 0 80px 0;
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  .banner {
+    display: block;
+  }
+}
+
+.banner img {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .banner img {
+    width: 100;
+  }
+}
+
+.banner .banner-text {
+  background-color: #fafafa;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 22em;
+  width: 27em;
+}
+
+@media (max-width: 600px) {
+  .banner .banner-text {
+    position: static;
+  }
+}
+
+.banner .banner-text p {
+  color: #33323d;
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.profile {
+  color: #33323d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 7em;
+  margin-bottom: 6em;
+}
+
+@media (max-width: 600px) {
+  .profile {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.profile img {
+  width: 33em;
+}
+
+@media (max-width: 600px) {
+  .profile img {
+    width: 100%;
+  }
+}
+
+.profile .profile-txt {
+  border-bottom: 1px solid #eaeaeb;
+  border-top: 1px solid #eaeaeb;
+  margin-left: 80px;
+}
+
+@media (max-width: 600px) {
+  .profile .profile-txt {
+    margin-left: 0;
+  }
+}
+
+.profile .profile-txt h1 {
+  font-family: "Ibarra Real Nova", serif;
+  margin-top: 40px;
+}
+
+.profile .profile-txt p {
+  color: #33323db6;
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+@media (max-width: 600px) {
+  .profile .profile-txt p {
+    font-size: 20px;
+    line-height: 32px;
+  }
 }
 
 .project-preview {

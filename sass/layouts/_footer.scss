@@ -36,14 +36,10 @@ footer {
       align-items: center;
       display: flex;
 
-      .menu-2 {
-        height: 4em;
-
-        .link-2 {
-          @include nav-links;
-          color: #eaeaeb;
-          padding: 10px 0;
-        }
+      .link-2 {
+        @include nav-links;
+        color: #eaeaeb;
+        padding: 10px 0;
       }
     }
   }

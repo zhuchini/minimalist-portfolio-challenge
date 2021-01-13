@@ -67,7 +67,7 @@ highlightActiveLink();
 
 function menuBarMobile() {
   var x = document.getElementById("myTopnav");
-  if (x.className === "menu") {
+  if (x.target.className === "menu") {
     x.className += " responsive";
   } else {
     x.className = "menu";
