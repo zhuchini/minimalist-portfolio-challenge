@@ -1,8 +1,9 @@
+html,
 body {
   background-color: #fafafa;
   margin: 0;
-  position: relative;
   min-height: 100vh;
+  position: relative;
 
   @include tablet-portrait-up {
     // margin: 24px;
@@ -11,11 +12,12 @@ body {
 
 .container {
   margin: auto;
-  width: 1080px;
+  box-sizing: border-box;
+  max-width: 1080px;
   padding-bottom: 1rem;
 
   @include mobile {
     padding: 24px;
-    width: 600px;
+    box-sizing: border-box;
   }
 }

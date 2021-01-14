@@ -2,14 +2,33 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 6em;
+  margin-bottom: 24px;
+
+  @include mobile {
+    display: block;
+    text-align: center;
+  }
+
+  .line {
+    @include mobile {
+      display: none;
+    }
+  }
 
   .contact-txt {
     width: 20em;
 
+    @include mobile {
+      width: 18em;
+    }
+
     h2 {
       font-family: "Ibarra Real Nova", serif;
       font-size: 36px;
+
+      @include mobile {
+        font-size: 40px;
+      }
     }
   }
 
@@ -20,8 +39,10 @@
 
 footer {
   background-color: #33323d;
+  bottom: 0;
+  // left: 0;
+  margin: auto;
   position: absolute;
-  bottom: -100px;
   width: 100%;
 
   .real-footer {
@@ -30,7 +51,7 @@ footer {
     height: 4.7em;
     justify-content: space-between;
     margin: auto;
-    width: 1080px;
+    max-width: 1080px;
 
     .left-footer {
       align-items: center;

@@ -15,7 +15,7 @@
 }
 
 .banner-btn .down-arrow {
-  background-color: #33323D;
+  background-color: #33323d;
   padding: 13px;
   display: block;
 }
@@ -26,10 +26,10 @@
 
 .banner-btn .abt-me {
   cursor: pointer;
-  background-color: #203A4C;
+  background-color: #203a4c;
   border: none;
-  color: #FAFAFA;
-  font-family: 'Public Sans', serif;
+  color: #fafafa;
+  font-family: "Public Sans", serif;
   font-size: 11px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -39,14 +39,20 @@
   margin-top: 32px;
 }
 
+@media (max-width: 600px) {
+  .portfolio-btn {
+    padding-bottom: 64px;
+  }
+}
+
 .portfolio-btn a {
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid #33323d;
   color: #33323d;
   cursor: pointer;
   font-family: "Public Sans", sans-serif;
-  font-size: 10px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: bolder;
   letter-spacing: 2px;
   padding: 16px 32px;
   text-decoration: none;
@@ -54,8 +60,8 @@
 }
 
 .portfolio-btn a:hover {
-  background-color: #33323D;
-  color: #FAFAFA;
+  background-color: #33323d;
+  color: #fafafa;
 }
 
 .visit-btn {
@@ -64,12 +70,12 @@
 
 .visit-btn a {
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid #33323d;
   color: #33323d;
   cursor: pointer;
   font-family: "Public Sans", sans-serif;
-  font-size: 10px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: bolder;
   letter-spacing: 2px;
   padding: 16px 32px;
   text-decoration: none;
@@ -77,18 +83,18 @@
 }
 
 .visit-btn a:hover {
-  background-color: #33323D;
-  color: #FAFAFA;
+  background-color: #33323d;
+  color: #fafafa;
 }
 
 .contact-btn a {
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid #33323d;
   color: #33323d;
   cursor: pointer;
   font-family: "Public Sans", sans-serif;
-  font-size: 10px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: bolder;
   letter-spacing: 2px;
   padding: 16px 32px;
   text-decoration: none;
@@ -96,8 +102,8 @@
 }
 
 .contact-btn a:hover {
-  background-color: #33323D;
-  color: #FAFAFA;
+  background-color: #33323d;
+  color: #fafafa;
 }
 
 .contact-form {
@@ -241,16 +247,41 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 6em;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 600px) {
+  .contact-footer {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-footer .line {
+    display: none;
+  }
 }
 
 .contact-footer .contact-txt {
   width: 20em;
 }
 
+@media (max-width: 600px) {
+  .contact-footer .contact-txt {
+    width: 18em;
+  }
+}
+
 .contact-footer .contact-txt h2 {
   font-family: "Ibarra Real Nova", serif;
   font-size: 36px;
+}
+
+@media (max-width: 600px) {
+  .contact-footer .contact-txt h2 {
+    font-size: 40px;
+  }
 }
 
 .contact-footer .line {
@@ -259,8 +290,9 @@
 
 footer {
   background-color: #33323d;
+  bottom: 0;
+  margin: auto;
   position: absolute;
-  bottom: -100px;
   width: 100%;
 }
 
@@ -276,7 +308,7 @@ footer .real-footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: auto;
-  width: 1080px;
+  max-width: 1080px;
 }
 
 footer .real-footer .left-footer {
@@ -302,23 +334,27 @@ footer .real-footer .left-footer .link-2 {
   padding: 10px 0;
 }
 
+html,
 body {
   background-color: #fafafa;
   margin: 0;
-  position: relative;
   min-height: 100vh;
+  position: relative;
 }
 
 .container {
   margin: auto;
-  width: 1080px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 1080px;
   padding-bottom: 1rem;
 }
 
 @media (max-width: 600px) {
   .container {
     padding: 24px;
-    width: 600px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
 }
 
@@ -509,13 +545,10 @@ body {
   }
 }
 
-.profile img {
-  width: 33em;
-}
-
 @media (max-width: 600px) {
   .profile img {
     width: 100%;
+    padding-bottom: 32px;
   }
 }
 
@@ -596,12 +629,12 @@ body {
 
 .project-preview .project-desc .visit-btn button {
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid #33323d;
   color: #33323d;
   cursor: pointer;
   font-family: "Public Sans", sans-serif;
-  font-size: 10px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: bolder;
   letter-spacing: 2px;
   padding: 16px 32px;
   text-decoration: none;
