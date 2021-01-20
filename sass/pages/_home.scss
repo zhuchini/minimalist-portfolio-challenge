@@ -7,11 +7,20 @@
     margin: 0;
   }
 
-  img {
+  .banner-img {
     width: 100%;
 
     @include mobile {
-      width: 100;
+      background: url("./starter-code/images/homepage/mobile/image-homepage-hero.jpg")
+        no-repeat;
+    }
+
+    img {
+      width: 100%;
+
+      @include mobile {
+        display: hidden;
+      }
     }
   }
 
@@ -50,15 +59,31 @@
 
   @include mobile {
     flex-wrap: wrap;
+    margin: 0;
   }
 
-  img {
-    // width: 33em;
+  .profile-pic {
+    position: relative;
 
-    @include mobile {
-      width: 100%;
-      padding-bottom: 32px;
+    .pp-1 {
+      position: absolute;
+      overflow: hidden;
+      left: 0;
+      top: 0;
+
+      @include mobile {
+        width: 80%;
+        height: 100%;
+      }
     }
+
+    //   @include tablet-portrait-up {
+    //     left: -72%;
+    //     position: absolute;
+    //     width: auto;
+    //     height: 100%;
+    //   }
+    // }
   }
 
   .profile-txt {
@@ -68,7 +93,11 @@
 
     @include mobile {
       margin-left: 0;
-      // margin-right: 40px;
+      margin-bottom: 1rem;
+    }
+
+    @include tablet-portrait-up {
+      // margin-left: 32px;
     }
 
     h1 {
@@ -101,34 +130,50 @@
   margin-bottom: 24px;
 
   @include mobile {
-    display: block;
+    flex-direction: column;
     text-align: center;
     padding-bottom: 64px;
+  }
+
+  @include tablet-portrait-up {
+    // display: flex;
+    flex-direction: row;
   }
 
   .contact-txt {
     margin-right: 32px;
 
     @include mobile {
-      margin: 0 24px 48px 24px;
+      margin: 24px;
     }
 
     h3 {
       font-family: "Ibarra Real Nova", serif;
-      font-size: 41px;
+      font-size: 40px;
 
       @include mobile {
-        font-size: 40px;
+        // font-size: 40px;
+      }
+
+      @include tablet-portrait-up {
+        width: 17rem;
+        width: 100vw;
+        max-width: 360px;
       }
     }
   }
 
   hr {
     border: 1px solid #eaeaeb;
-    width: 100%;
+    width: 40%;
 
     @include mobile {
       display: none;
+    }
+
+    @include tablet-portrait-up {
+      flex: 1;
+      width: 40%;
     }
   }
 }

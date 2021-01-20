@@ -16,7 +16,7 @@
 
 @media (max-width: 600px) {
   .banner-btn {
-    position: static;
+    display: none;
   }
 }
 
@@ -94,7 +94,13 @@
 }
 
 .contact-btn {
-  margin-left: 32px;
+  padding-left: 24px;
+}
+
+@media (max-width: 600px) {
+  .contact-btn {
+    padding: 0;
+  }
 }
 
 .contact-btn a {
@@ -192,7 +198,7 @@
 
 .social-icons li {
   float: left;
-  padding-right: 0.7rem;
+  padding: 8px;
 }
 
 .social-icons .fab {
@@ -228,7 +234,7 @@
 
 .social-icons-2 li {
   float: left;
-  padding-right: 0.7rem;
+  padding: 8px;
 }
 
 .social-icons-2 .fab {
@@ -500,13 +506,23 @@ body {
   }
 }
 
-.banner img {
+.banner .banner-img {
   width: 100%;
 }
 
 @media (max-width: 600px) {
-  .banner img {
-    width: 100;
+  .banner .banner-img {
+    background: url("./starter-code/images/homepage/mobile/image-homepage-hero.jpg") no-repeat;
+  }
+}
+
+.banner .banner-img img {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .banner .banner-img img {
+    display: hidden;
   }
 }
 
@@ -551,13 +567,14 @@ body {
   .profile {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: 0;
   }
 }
 
-@media (max-width: 600px) {
-  .profile img {
+@media (min-width: 1200px) {
+  .profile .profile-pic {
     width: 100%;
-    padding-bottom: 32px;
+    height: 100%;
   }
 }
 
@@ -570,6 +587,7 @@ body {
 @media (max-width: 600px) {
   .profile .profile-txt {
     margin-left: 0;
+    margin-bottom: 1rem;
   }
 }
 
@@ -613,9 +631,21 @@ body {
 
 @media (max-width: 600px) {
   .contact-bottom {
-    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
     padding-bottom: 64px;
+  }
+}
+
+@media (min-width: 600px) {
+  .contact-bottom {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -625,29 +655,40 @@ body {
 
 @media (max-width: 600px) {
   .contact-bottom .contact-txt {
-    margin: 0 24px 48px 24px;
+    margin: 24px;
   }
 }
 
 .contact-bottom .contact-txt h3 {
   font-family: "Ibarra Real Nova", serif;
-  font-size: 41px;
+  font-size: 40px;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 600px) {
   .contact-bottom .contact-txt h3 {
-    font-size: 40px;
+    width: 17rem;
+    width: 100vw;
+    max-width: 360px;
   }
 }
 
 .contact-bottom hr {
   border: 1px solid #eaeaeb;
-  width: 100%;
+  width: 40%;
 }
 
 @media (max-width: 600px) {
   .contact-bottom hr {
     display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  .contact-bottom hr {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 40%;
   }
 }
 
