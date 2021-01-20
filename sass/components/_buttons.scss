@@ -7,6 +7,10 @@
   bottom: 0;
   left: 0;
 
+  @include mobile {
+    position: static;
+  }
+
   .down-arrow {
     background-color: #33323d;
     padding: 13px;
@@ -60,6 +64,8 @@
 }
 
 .contact-btn {
+  margin-left: 32px;
+
   a {
     @include white-btn;
   }

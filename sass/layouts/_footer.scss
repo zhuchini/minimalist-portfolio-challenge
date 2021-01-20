@@ -1,66 +1,52 @@
-.contact-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 24px;
-
-  @include mobile {
-    display: block;
-    text-align: center;
-  }
-
-  .line {
-    @include mobile {
-      display: none;
-    }
-  }
-
-  .contact-txt {
-    width: 20em;
-
-    @include mobile {
-      width: 18em;
-    }
-
-    h2 {
-      font-family: "Ibarra Real Nova", serif;
-      font-size: 36px;
-
-      @include mobile {
-        font-size: 40px;
-      }
-    }
-  }
-
-  .line {
-    color: #eaeaeb;
-  }
-}
-
 footer {
   background-color: #33323d;
-  bottom: 0;
-  // left: 0;
+  bottom: -40px;
   margin: auto;
   position: absolute;
   width: 100%;
 
+  @include mobile {
+    position: static;
+  }
+
   .real-footer {
     align-items: center;
     display: flex;
-    height: 4.7em;
+    // height: 4.7em;
     justify-content: space-between;
     margin: auto;
     max-width: 1080px;
+
+    @include mobile {
+      flex-direction: column;
+      padding: 32px 0;
+    }
 
     .left-footer {
       align-items: center;
       display: flex;
 
+      @include mobile {
+        flex-direction: column;
+      }
+
+      .logo-2 {
+        @include mobile {
+          margin-bottom: 16px;
+        }
+      }
+
       .link-2 {
         @include nav-links;
         color: #eaeaeb;
         padding: 10px 0;
+
+        @include mobile {
+          display: flex;
+          justify-content: center;
+          margin: 0;
+          padding: 16px 0;
+        }
       }
     }
   }
