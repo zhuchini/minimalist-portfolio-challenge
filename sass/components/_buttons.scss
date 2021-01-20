@@ -7,8 +7,12 @@
   bottom: 0;
   left: 0;
 
+  @include mobile {
+    position: static;
+  }
+
   .down-arrow {
-    background-color: #33323D;
+    background-color: #33323d;
     padding: 13px;
     display: block;
   }
@@ -19,10 +23,10 @@
 
   .abt-me {
     cursor: pointer;
-    background-color: #203A4C;
+    background-color: #203a4c;
     border: none;
-    color: #FAFAFA;
-    font-family: 'Public Sans', serif;
+    color: #fafafa;
+    font-family: "Public Sans", serif;
     font-size: 11px;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -31,37 +35,43 @@
 
 .portfolio-btn {
   margin-top: 32px;
-  
+
+  @include mobile {
+    padding-bottom: 64px;
+  }
+
   a {
     @include white-btn;
   }
 
   a:hover {
-    background-color: #33323D;
-    color: #FAFAFA;
+    background-color: #33323d;
+    color: #fafafa;
   }
 }
 
 .visit-btn {
   margin-top: 36px;
-  
+
   a {
     @include white-btn;
   }
 
   a:hover {
-    background-color: #33323D;
-    color: #FAFAFA;
+    background-color: #33323d;
+    color: #fafafa;
   }
 }
 
 .contact-btn {
+  margin-left: 32px;
+
   a {
     @include white-btn;
   }
 
   a:hover {
-    background-color: #33323D;
-    color: #FAFAFA;
+    background-color: #33323d;
+    color: #fafafa;
   }
 }

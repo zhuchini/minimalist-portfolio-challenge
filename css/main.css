@@ -1,61 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap");
-.banner {
-  margin: 48px 0 80px 0;
-  position: relative;
-}
-
-.banner img {
-  width: 100%;
-}
-
-.banner .banner-text {
-  background-color: #fafafa;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 22em;
-  width: 27em;
-}
-
-.banner .banner-text p {
-  color: #33323d;
-  font-family: "Ibarra Real Nova", serif;
-  font-size: 45px;
-  font-weight: bold;
-  margin-right: 28px;
-}
-
-.profile {
-  color: #33323d;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 7em;
-  margin-bottom: 6em;
-}
-
-.profile img {
-  width: 33em;
-}
-
-.profile .profile-txt {
-  border-bottom: 1px solid #eaeaeb;
-  border-top: 1px solid #eaeaeb;
-  margin: 0 112px;
-}
-
-.profile .profile-txt h1 {
-  font-family: "Ibarra Real Nova", serif;
-  margin-top: 40px;
-}
-
-.profile .profile-txt p {
-  color: #33323db6;
-  font-family: "Public Sans", sans-serif;
-  font-size: 16px;
-  line-height: 30px;
-}
-
 .banner-btn {
   cursor: pointer;
   display: -webkit-box;
@@ -71,8 +14,14 @@
   left: 0;
 }
 
+@media (max-width: 600px) {
+  .banner-btn {
+    position: static;
+  }
+}
+
 .banner-btn .down-arrow {
-  background-color: #33323D;
+  background-color: #33323d;
   padding: 13px;
   display: block;
 }
@@ -83,10 +32,10 @@
 
 .banner-btn .abt-me {
   cursor: pointer;
-  background-color: #203A4C;
+  background-color: #203a4c;
   border: none;
-  color: #FAFAFA;
-  font-family: 'Public Sans', serif;
+  color: #fafafa;
+  font-family: "Public Sans", serif;
   font-size: 11px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -96,14 +45,20 @@
   margin-top: 32px;
 }
 
+@media (max-width: 600px) {
+  .portfolio-btn {
+    padding-bottom: 64px;
+  }
+}
+
 .portfolio-btn a {
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid #33323d;
   color: #33323d;
   cursor: pointer;
   font-family: "Public Sans", sans-serif;
-  font-size: 10px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: bolder;
   letter-spacing: 2px;
   padding: 16px 32px;
   text-decoration: none;
@@ -111,8 +66,8 @@
 }
 
 .portfolio-btn a:hover {
-  background-color: #33323D;
-  color: #FAFAFA;
+  background-color: #33323d;
+  color: #fafafa;
 }
 
 .visit-btn {
@@ -121,12 +76,12 @@
 
 .visit-btn a {
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid #33323d;
   color: #33323d;
   cursor: pointer;
   font-family: "Public Sans", sans-serif;
-  font-size: 10px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: bolder;
   letter-spacing: 2px;
   padding: 16px 32px;
   text-decoration: none;
@@ -134,18 +89,22 @@
 }
 
 .visit-btn a:hover {
-  background-color: #33323D;
-  color: #FAFAFA;
+  background-color: #33323d;
+  color: #fafafa;
+}
+
+.contact-btn {
+  margin-left: 32px;
 }
 
 .contact-btn a {
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid #33323d;
   color: #33323d;
   cursor: pointer;
   font-family: "Public Sans", sans-serif;
-  font-size: 10px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: bolder;
   letter-spacing: 2px;
   padding: 16px 32px;
   text-decoration: none;
@@ -153,8 +112,8 @@
 }
 
 .contact-btn a:hover {
-  background-color: #33323D;
-  color: #FAFAFA;
+  background-color: #33323d;
+  color: #fafafa;
 }
 
 .contact-form {
@@ -288,37 +247,18 @@
   color: #0a66c2;
 }
 
-.contact-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 6em;
-}
-
-.contact-footer .contact-txt {
-  width: 20em;
-}
-
-.contact-footer .contact-txt h2 {
-  font-family: "Ibarra Real Nova", serif;
-  font-size: 36px;
-}
-
-.contact-footer .line {
-  color: #eaeaeb;
-}
-
 footer {
   background-color: #33323d;
+  bottom: -40px;
+  margin: auto;
   position: absolute;
-  bottom: -100px;
   width: 100%;
+}
+
+@media (max-width: 600px) {
+  footer {
+    position: static;
+  }
 }
 
 footer .real-footer {
@@ -328,12 +268,21 @@ footer .real-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 4.7em;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: auto;
-  width: 1080px;
+  max-width: 1080px;
+}
+
+@media (max-width: 600px) {
+  footer .real-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 32px 0;
+  }
 }
 
 footer .real-footer .left-footer {
@@ -345,12 +294,22 @@ footer .real-footer .left-footer {
   display: flex;
 }
 
-footer .real-footer .left-footer .menu-2 {
-  height: 4em;
+@media (max-width: 600px) {
+  footer .real-footer .left-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
-footer .real-footer .left-footer .menu-2 .link-2 {
-  display: inline-block;
+@media (max-width: 600px) {
+  footer .real-footer .left-footer .logo-2 {
+    margin-bottom: 16px;
+  }
+}
+
+footer .real-footer .left-footer .link-2 {
   margin: 16px 0 16px 44px;
   position: relative;
   text-decoration: none;
@@ -364,39 +323,45 @@ footer .real-footer .left-footer .menu-2 .link-2 {
   padding: 10px 0;
 }
 
+@media (max-width: 600px) {
+  footer .real-footer .left-footer .link-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+    padding: 16px 0;
+  }
+}
+
+html,
 body {
   background-color: #fafafa;
-  position: relative;
+  margin: 0;
   min-height: 100vh;
-}
-
-@media (max-width: 599px) {
-  body {
-    margin: 24px;
-  }
-}
-
-@media (min-width: 600px) {
-  body {
-    margin: 24px;
-  }
+  position: relative;
 }
 
 .container {
   margin: auto;
-  width: 1080px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 1080px;
   padding-bottom: 1rem;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   .container {
-    width: 600px;
+    padding: 24px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
 }
 
 .header {
   margin: auto;
-  margin-bottom: 32px;
   margin-top: 16px;
   max-width: 1080px;
   display: -webkit-box;
@@ -410,28 +375,44 @@ body {
           align-items: center;
 }
 
-.header .menu .fa-bars {
-  display: none;
+@media (max-width: 600px) {
+  .header {
+    padding: 0 24px;
+  }
 }
 
-@media (max-width: 599px) {
-  .header .menu .fa-bars {
-    display: block;
-  }
+.header .menu .bar-icon {
+  display: none;
 }
 
 .header .menu a.active-page {
   color: #5fb4a2;
 }
 
-@media (max-width: 599px) {
-  .header .menu {
+@media (max-width: 600px) {
+  .header .menu a {
     display: none;
+  }
+  .header .menu a.bar-icon {
+    float: right;
+    display: block;
+  }
+  .header .menu .responsive {
+    position: relative;
+  }
+  .header .menu .responsive .bar-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .header .menu .responsive a {
+    float: none;
+    display: block;
+    text-align: left;
   }
 }
 
 .link {
-  display: inline-block;
   margin: 16px 0 16px 44px;
   position: relative;
   text-decoration: none;
@@ -507,6 +488,169 @@ body {
   border: 1px solid #f43030;
 }
 
+.banner {
+  margin: 48px 0 80px 0;
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  .banner {
+    display: block;
+    margin: 0;
+  }
+}
+
+.banner img {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .banner img {
+    width: 100;
+  }
+}
+
+.banner .banner-text {
+  background-color: #fafafa;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 27em;
+}
+
+@media (max-width: 600px) {
+  .banner .banner-text {
+    position: static;
+    width: 100%;
+  }
+}
+
+.banner .banner-text p {
+  color: #33323d;
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .banner .banner-text p {
+    font-size: 36px;
+  }
+}
+
+.profile {
+  color: #33323d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 7em;
+  margin-bottom: 6em;
+}
+
+@media (max-width: 600px) {
+  .profile {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .profile img {
+    width: 100%;
+    padding-bottom: 32px;
+  }
+}
+
+.profile .profile-txt {
+  border-bottom: 1px solid #eaeaeb;
+  border-top: 1px solid #eaeaeb;
+  margin-left: 80px;
+}
+
+@media (max-width: 600px) {
+  .profile .profile-txt {
+    margin-left: 0;
+  }
+}
+
+.profile .profile-txt h1 {
+  font-family: "Ibarra Real Nova", serif;
+  margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+  .profile .profile-txt h1 {
+    font-size: 40px;
+  }
+}
+
+.profile .profile-txt p {
+  color: #33323db6;
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+@media (max-width: 600px) {
+  .profile .profile-txt p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+.contact-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 600px) {
+  .contact-bottom {
+    display: block;
+    text-align: center;
+    padding-bottom: 64px;
+  }
+}
+
+.contact-bottom .contact-txt {
+  margin-right: 32px;
+}
+
+@media (max-width: 600px) {
+  .contact-bottom .contact-txt {
+    margin: 0 24px 48px 24px;
+  }
+}
+
+.contact-bottom .contact-txt h3 {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 41px;
+}
+
+@media (max-width: 600px) {
+  .contact-bottom .contact-txt h3 {
+    font-size: 40px;
+  }
+}
+
+.contact-bottom hr {
+  border: 1px solid #eaeaeb;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .contact-bottom hr {
+    display: none;
+  }
+}
+
 .project-preview {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -553,12 +697,12 @@ body {
 
 .project-preview .project-desc .visit-btn button {
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid #33323d;
   color: #33323d;
   cursor: pointer;
   font-family: "Public Sans", sans-serif;
-  font-size: 10px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: bolder;
   letter-spacing: 2px;
   padding: 16px 32px;
   text-decoration: none;
