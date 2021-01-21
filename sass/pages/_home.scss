@@ -10,11 +10,6 @@
   .banner-img {
     width: 100%;
 
-    @include mobile {
-      background: url("./starter-code/images/homepage/mobile/image-homepage-hero.jpg")
-        no-repeat;
-    }
-
     img {
       width: 100%;
 
@@ -64,40 +59,45 @@
 
   .profile-pic {
     position: relative;
+    overflow: hidden;
+    width: 100%;
+    // height: 100%;
 
     .pp-1 {
-      position: absolute;
-      overflow: hidden;
-      left: 0;
-      top: 0;
-
       @include mobile {
-        width: 80%;
+        width: 100%;
         height: 100%;
       }
-    }
 
-    //   @include tablet-portrait-up {
-    //     left: -72%;
-    //     position: absolute;
-    //     width: auto;
-    //     height: 100%;
-    //   }
-    // }
+      @include tablet-portrait-up {
+        left: -36%;
+        position: absolute;
+        width: auto;
+        height: 100%;
+      }
+
+      @include tablet-landscape-up {
+        position: static;
+        width: 100%;
+      }
+    }
   }
 
-  .profile-txt {
+  .profile-text {
     border-bottom: 1px solid #eaeaeb;
     border-top: 1px solid #eaeaeb;
-    margin-left: 80px;
 
     @include mobile {
-      margin-left: 0;
-      margin-bottom: 1rem;
+      margin: 0;
     }
 
     @include tablet-portrait-up {
-      // margin-left: 32px;
+      width: 100%;
+      margin-right: 0;
+    }
+
+    @include tablet-landscape-up {
+      margin: 0 100px;
     }
 
     h1 {
@@ -127,7 +127,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 72px;
 
   @include mobile {
     flex-direction: column;
@@ -140,7 +140,7 @@
     flex-direction: row;
   }
 
-  .contact-txt {
+  .contact-text {
     margin-right: 32px;
 
     @include mobile {

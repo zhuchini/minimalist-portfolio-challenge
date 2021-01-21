@@ -42,12 +42,24 @@
 }
 
 .portfolio-btn {
-  margin-top: 32px;
+  margin-top: 40px;
 }
 
 @media (max-width: 600px) {
   .portfolio-btn {
     padding-bottom: 64px;
+  }
+}
+
+@media (min-width: 600px) {
+  .portfolio-btn {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 900px) {
+  .portfolio-btn {
+    margin-bottom: 0;
   }
 }
 
@@ -510,12 +522,6 @@ body {
   width: 100%;
 }
 
-@media (max-width: 600px) {
-  .banner .banner-img {
-    background: url("./starter-code/images/homepage/mobile/image-homepage-hero.jpg") no-repeat;
-  }
-}
-
 .banner .banner-img img {
   width: 100%;
 }
@@ -571,38 +577,71 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
-  .profile .profile-pic {
+.profile .profile-pic {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .profile .profile-pic .pp-1 {
     width: 100%;
     height: 100%;
   }
 }
 
-.profile .profile-txt {
-  border-bottom: 1px solid #eaeaeb;
-  border-top: 1px solid #eaeaeb;
-  margin-left: 80px;
-}
-
-@media (max-width: 600px) {
-  .profile .profile-txt {
-    margin-left: 0;
-    margin-bottom: 1rem;
+@media (min-width: 600px) {
+  .profile .profile-pic .pp-1 {
+    left: -36%;
+    position: absolute;
+    width: auto;
+    height: 100%;
   }
 }
 
-.profile .profile-txt h1 {
+@media (min-width: 900px) {
+  .profile .profile-pic .pp-1 {
+    position: static;
+    width: 100%;
+  }
+}
+
+.profile .profile-text {
+  border-bottom: 1px solid #eaeaeb;
+  border-top: 1px solid #eaeaeb;
+}
+
+@media (max-width: 600px) {
+  .profile .profile-text {
+    margin: 0;
+  }
+}
+
+@media (min-width: 600px) {
+  .profile .profile-text {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .profile .profile-text {
+    margin: 0 100px;
+  }
+}
+
+.profile .profile-text h1 {
   font-family: "Ibarra Real Nova", serif;
   margin-top: 40px;
 }
 
 @media (max-width: 600px) {
-  .profile .profile-txt h1 {
+  .profile .profile-text h1 {
     font-size: 40px;
   }
 }
 
-.profile .profile-txt p {
+.profile .profile-text p {
   color: #33323db6;
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
@@ -610,7 +649,7 @@ body {
 }
 
 @media (max-width: 600px) {
-  .profile .profile-txt p {
+  .profile .profile-text p {
     font-size: 16px;
     line-height: 28px;
   }
@@ -626,7 +665,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 72px;
 }
 
 @media (max-width: 600px) {
@@ -649,23 +688,23 @@ body {
   }
 }
 
-.contact-bottom .contact-txt {
+.contact-bottom .contact-text {
   margin-right: 32px;
 }
 
 @media (max-width: 600px) {
-  .contact-bottom .contact-txt {
+  .contact-bottom .contact-text {
     margin: 24px;
   }
 }
 
-.contact-bottom .contact-txt h3 {
+.contact-bottom .contact-text h3 {
   font-family: "Ibarra Real Nova", serif;
   font-size: 40px;
 }
 
 @media (min-width: 600px) {
-  .contact-bottom .contact-txt h3 {
+  .contact-bottom .contact-text h3 {
     width: 17rem;
     width: 100vw;
     max-width: 360px;

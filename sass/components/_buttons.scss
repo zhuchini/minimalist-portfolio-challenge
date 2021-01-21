@@ -34,10 +34,18 @@
 }
 
 .portfolio-btn {
-  margin-top: 32px;
+  margin-top: 40px;
 
   @include mobile {
     padding-bottom: 64px;
+  }
+
+  @include tablet-portrait-up {
+    margin-bottom: 60px;
+  }
+
+  @include tablet-landscape-up {
+    margin-bottom: 0;
   }
 
   a {
