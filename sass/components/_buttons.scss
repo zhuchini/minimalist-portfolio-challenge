@@ -1,43 +1,53 @@
 .banner-btn {
-  cursor: pointer;
   display: flex;
   flex-direction: row;
-  position: absolute;
-  height: 2.6em;
-  bottom: 0;
-  left: 0;
+  // position: absolute;
+  // height: 2.6em;
+  // bottom: 0;
+  // left: 0;
 
   @include mobile {
-    position: static;
+    // display: none;
+    margin-bottom: 6rem;
   }
 
   .down-arrow {
     background-color: #33323d;
+    cursor: pointer;
     padding: 13px;
     display: block;
   }
 
-  button {
-    padding: 0 36px;
-  }
-
-  .abt-me {
+  .about-me-btn {
     cursor: pointer;
     background-color: #203a4c;
     border: none;
-    color: #fafafa;
     font-family: "Public Sans", serif;
     font-size: 11px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    padding: 16px 36px;
     text-transform: uppercase;
+
+    a {
+      text-decoration: none;
+      color: #fafafa;
+    }
   }
 }
 
 .portfolio-btn {
-  margin-top: 32px;
+  margin-top: 40px;
 
   @include mobile {
     padding-bottom: 64px;
+  }
+
+  @include tablet-portrait-up {
+    margin-bottom: 60px;
+  }
+
+  @include tablet-landscape-up {
+    margin-bottom: 0;
   }
 
   a {
@@ -64,7 +74,11 @@
 }
 
 .contact-btn {
-  margin-left: 32px;
+  padding-left: 24px;
+
+  @include mobile {
+    padding: 0;
+  }
 
   a {
     @include white-btn;

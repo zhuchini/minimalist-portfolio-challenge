@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap");
 .banner-btn {
-  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,46 +7,56 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  position: absolute;
-  height: 2.6em;
-  bottom: 0;
-  left: 0;
 }
 
 @media (max-width: 600px) {
   .banner-btn {
-    position: static;
+    margin-bottom: 6rem;
   }
 }
 
 .banner-btn .down-arrow {
   background-color: #33323d;
+  cursor: pointer;
   padding: 13px;
   display: block;
 }
 
-.banner-btn button {
-  padding: 0 36px;
-}
-
-.banner-btn .abt-me {
+.banner-btn .about-me-btn {
   cursor: pointer;
   background-color: #203a4c;
   border: none;
-  color: #fafafa;
   font-family: "Public Sans", serif;
   font-size: 11px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  padding: 16px 36px;
   text-transform: uppercase;
 }
 
+.banner-btn .about-me-btn a {
+  text-decoration: none;
+  color: #fafafa;
+}
+
 .portfolio-btn {
-  margin-top: 32px;
+  margin-top: 40px;
 }
 
 @media (max-width: 600px) {
   .portfolio-btn {
     padding-bottom: 64px;
+  }
+}
+
+@media (min-width: 600px) {
+  .portfolio-btn {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 900px) {
+  .portfolio-btn {
+    margin-bottom: 0;
   }
 }
 
@@ -94,7 +103,13 @@
 }
 
 .contact-btn {
-  margin-left: 32px;
+  padding-left: 24px;
+}
+
+@media (max-width: 600px) {
+  .contact-btn {
+    padding: 0;
+  }
 }
 
 .contact-btn a {
@@ -192,7 +207,7 @@
 
 .social-icons li {
   float: left;
-  padding-right: 0.7rem;
+  padding: 8px;
 }
 
 .social-icons .fab {
@@ -228,7 +243,7 @@
 
 .social-icons-2 li {
   float: left;
-  padding-right: 0.7rem;
+  padding: 8px;
 }
 
 .social-icons-2 .fab {
@@ -336,7 +351,10 @@ footer .real-footer .left-footer .link-2 {
   }
 }
 
-html,
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #fafafa;
   margin: 0;
@@ -500,14 +518,8 @@ body {
   }
 }
 
-.banner img {
+.banner .banner-img .hero-image {
   width: 100%;
-}
-
-@media (max-width: 600px) {
-  .banner img {
-    width: 100;
-  }
 }
 
 .banner .banner-text {
@@ -534,7 +546,8 @@ body {
 
 @media (max-width: 600px) {
   .banner .banner-text p {
-    font-size: 36px;
+    font-size: 34px;
+    margin: 24px 0;
   }
 }
 
@@ -551,40 +564,75 @@ body {
   .profile {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: 0;
   }
+}
+
+.profile .profile-pic {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
 }
 
 @media (max-width: 600px) {
-  .profile img {
+  .profile .profile-pic .pp-1 {
     width: 100%;
-    padding-bottom: 32px;
+    height: 100%;
   }
 }
 
-.profile .profile-txt {
+@media (min-width: 600px) {
+  .profile .profile-pic .pp-1 {
+    left: -36%;
+    position: absolute;
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media (min-width: 900px) {
+  .profile .profile-pic .pp-1 {
+    position: static;
+    width: 100%;
+  }
+}
+
+.profile .profile-text {
   border-bottom: 1px solid #eaeaeb;
   border-top: 1px solid #eaeaeb;
-  margin-left: 80px;
 }
 
 @media (max-width: 600px) {
-  .profile .profile-txt {
-    margin-left: 0;
+  .profile .profile-text {
+    margin: 0;
   }
 }
 
-.profile .profile-txt h1 {
+@media (min-width: 600px) {
+  .profile .profile-text {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .profile .profile-text {
+    margin: 0 100px;
+  }
+}
+
+.profile .profile-text h1 {
   font-family: "Ibarra Real Nova", serif;
   margin-top: 40px;
 }
 
 @media (max-width: 600px) {
-  .profile .profile-txt h1 {
+  .profile .profile-text h1 {
     font-size: 40px;
   }
 }
 
-.profile .profile-txt p {
+.profile .profile-text p {
   color: #33323db6;
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
@@ -592,7 +640,7 @@ body {
 }
 
 @media (max-width: 600px) {
-  .profile .profile-txt p {
+  .profile .profile-text p {
     font-size: 16px;
     line-height: 28px;
   }
@@ -608,46 +656,69 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 72px;
 }
 
 @media (max-width: 600px) {
   .contact-bottom {
-    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
     padding-bottom: 64px;
   }
 }
 
-.contact-bottom .contact-txt {
+@media (min-width: 600px) {
+  .contact-bottom {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.contact-bottom .contact-text {
   margin-right: 32px;
 }
 
 @media (max-width: 600px) {
-  .contact-bottom .contact-txt {
-    margin: 0 24px 48px 24px;
+  .contact-bottom .contact-text {
+    margin: 24px;
   }
 }
 
-.contact-bottom .contact-txt h3 {
+.contact-bottom .contact-text h3 {
   font-family: "Ibarra Real Nova", serif;
-  font-size: 41px;
+  font-size: 40px;
 }
 
-@media (max-width: 600px) {
-  .contact-bottom .contact-txt h3 {
-    font-size: 40px;
+@media (min-width: 600px) {
+  .contact-bottom .contact-text h3 {
+    width: 17rem;
+    width: 100vw;
+    max-width: 360px;
   }
 }
 
 .contact-bottom hr {
   border: 1px solid #eaeaeb;
-  width: 100%;
+  width: 40%;
 }
 
 @media (max-width: 600px) {
   .contact-bottom hr {
     display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  .contact-bottom hr {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 40%;
   }
 }
 

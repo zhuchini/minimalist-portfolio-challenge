@@ -1,4 +1,7 @@
-html,
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #fafafa;
   margin: 0;
@@ -6,7 +9,7 @@ body {
   position: relative;
 
   @include tablet-portrait-up {
-    // margin: 24px;
+    // padding: 24px;
   }
 }
 
@@ -19,5 +22,9 @@ body {
   @include mobile {
     padding: 24px;
     box-sizing: border-box;
+  }
+
+  @include tablet-portrait-up {
+    // padding: 24px;
   }
 }
