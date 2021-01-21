@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap");
 .banner-btn {
-  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,37 +7,35 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  position: absolute;
-  height: 2.6em;
-  bottom: 0;
-  left: 0;
 }
 
 @media (max-width: 600px) {
   .banner-btn {
-    display: none;
+    margin-bottom: 6rem;
   }
 }
 
 .banner-btn .down-arrow {
   background-color: #33323d;
+  cursor: pointer;
   padding: 13px;
   display: block;
 }
 
-.banner-btn button {
-  padding: 0 36px;
-}
-
-.banner-btn .abt-me {
+.banner-btn .about-me-btn {
   cursor: pointer;
   background-color: #203a4c;
   border: none;
-  color: #fafafa;
   font-family: "Public Sans", serif;
   font-size: 11px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  padding: 16px 36px;
   text-transform: uppercase;
+}
+
+.banner-btn .about-me-btn a {
+  text-decoration: none;
+  color: #fafafa;
 }
 
 .portfolio-btn {
@@ -354,7 +351,10 @@ footer .real-footer .left-footer .link-2 {
   }
 }
 
-html,
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #fafafa;
   margin: 0;
@@ -518,18 +518,8 @@ body {
   }
 }
 
-.banner .banner-img {
+.banner .banner-img .hero-image {
   width: 100%;
-}
-
-.banner .banner-img img {
-  width: 100%;
-}
-
-@media (max-width: 600px) {
-  .banner .banner-img img {
-    display: hidden;
-  }
 }
 
 .banner .banner-text {
@@ -556,7 +546,8 @@ body {
 
 @media (max-width: 600px) {
   .banner .banner-text p {
-    font-size: 36px;
+    font-size: 34px;
+    margin: 24px 0;
   }
 }
 
