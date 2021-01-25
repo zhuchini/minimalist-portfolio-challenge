@@ -7,16 +7,22 @@
     margin: 0;
   }
 
-  .banner-img {
-    .hero-image {
-      width: 100%;
-    }
+  // @include tablet-portrait-up {
+  //   width: 100%;
+  // }
+
+  .hero-image {
+    width: 100%;
+
+    // @include tablet-portrait-up {
+    //   width: 100%;
+    // }
   }
 
   .banner-text {
     background-color: #fafafa;
     position: absolute;
-    left: 0;
+    left: -1px;
     bottom: 0;
     width: 27em;
 
