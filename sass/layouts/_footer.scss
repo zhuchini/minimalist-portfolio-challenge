@@ -17,6 +17,10 @@ footer {
     margin: auto;
     max-width: 1080px;
 
+    @include tablet-portrait-up {
+      padding: 0 24px;
+    }
+
     @include mobile {
       flex-direction: column;
       padding: 32px 0;

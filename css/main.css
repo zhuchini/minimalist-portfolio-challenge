@@ -54,12 +54,6 @@
   }
 }
 
-@media (min-width: 900px) {
-  .portfolio-btn {
-    margin-bottom: 0;
-  }
-}
-
 .portfolio-btn a {
   background-color: white;
   border: 1px solid #33323d;
@@ -80,7 +74,7 @@
 }
 
 .visit-btn {
-  margin-top: 36px;
+  margin: 36px 0;
 }
 
 .visit-btn a {
@@ -288,6 +282,12 @@ footer .real-footer {
           justify-content: space-between;
   margin: auto;
   max-width: 1080px;
+}
+
+@media (min-width: 600px) {
+  footer .real-footer {
+    padding: 0 24px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -531,7 +531,6 @@ body {
 }
 
 .banner {
-  margin: 48px 0 80px 0;
   position: relative;
 }
 
@@ -542,15 +541,24 @@ body {
   }
 }
 
+@media (min-width: 600px) {
+  .banner {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner {
+    margin: 48px 0 80px 0;
+  }
+}
+
 .banner .hero-image {
   width: 100%;
 }
 
 .banner .banner-text {
   background-color: #fafafa;
-  position: absolute;
-  left: -1px;
-  bottom: 0;
   width: 27em;
 }
 
@@ -561,10 +569,18 @@ body {
   }
 }
 
+@media (min-width: 600px) {
+  .banner .banner-text {
+    position: absolute;
+    left: -1px;
+    bottom: 0;
+    width: 32em;
+  }
+}
+
 .banner .banner-text p {
   color: #33323d;
   font-family: "Ibarra Real Nova", serif;
-  font-size: 45px;
   font-weight: bold;
 }
 
@@ -575,13 +591,24 @@ body {
   }
 }
 
+@media (min-width: 600px) {
+  .banner .banner-text p {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner .banner-text p {
+    font-size: 45px;
+  }
+}
+
 .profile {
   color: #33323d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 7em;
-  margin-bottom: 6em;
+  margin: 6rem 0;
 }
 
 @media (max-width: 600px) {
@@ -607,7 +634,7 @@ body {
 
 @media (min-width: 600px) {
   .profile .profile-pic .pp-1 {
-    left: -36%;
+    left: -255px;
     position: absolute;
     width: auto;
     height: 100%;
@@ -616,8 +643,13 @@ body {
 
 @media (min-width: 900px) {
   .profile .profile-pic .pp-1 {
-    position: static;
-    width: 100%;
+    left: -70px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .profile .profile-pic .pp-1 {
+    left: 0;
   }
 }
 
@@ -634,8 +666,7 @@ body {
 
 @media (min-width: 600px) {
   .profile .profile-text {
-    width: 100%;
-    margin-right: 0;
+    width: 86%;
   }
 }
 
@@ -671,16 +702,16 @@ body {
 }
 
 .contact-bottom {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 72px;
+  padding-bottom: 60px;
 }
 
 @media (max-width: 600px) {
@@ -690,16 +721,6 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    padding-bottom: 64px;
-  }
-}
-
-@media (min-width: 600px) {
-  .contact-bottom {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
 }
 
@@ -750,13 +771,34 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 30em;
-  margin: 64px 0;
+  margin: 6rem 0;
+}
+
+@media (max-width: 600px) {
+  .project-preview {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-preview .portfolio-img {
+    width: 100%;
+    padding-bottom: 30px;
+  }
 }
 
 .project-preview .portfolio-img img {
-  height: 100%;
   width: 32.5em;
+}
+
+@media (max-width: 600px) {
+  .project-preview .portfolio-img img {
+    width: 100%;
+  }
 }
 
 .project-preview .project-desc {
@@ -773,6 +815,13 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 120px 0 104px;
+}
+
+@media (max-width: 600px) {
+  .project-preview .project-desc {
+    padding: 24px 0 12px 0;
+    margin: 0 0 72px 0;
+  }
 }
 
 .project-preview .project-desc h2 {
@@ -803,6 +852,13 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.reverse-col-project-preview {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
 }
 
 .project {

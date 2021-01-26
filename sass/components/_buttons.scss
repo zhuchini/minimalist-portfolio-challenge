@@ -47,7 +47,7 @@
   }
 
   @include tablet-landscape-up {
-    margin-bottom: 0;
+    // margin-bottom: 0;
   }
 
   a {
@@ -61,7 +61,7 @@
 }
 
 .visit-btn {
-  margin-top: 36px;
+  margin: 36px 0;
 
   a {
     @include white-btn;
