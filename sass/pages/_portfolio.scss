@@ -1,25 +1,42 @@
 .project-preview {
   display: flex;
-  margin: 6rem 0;
 
   @include mobile {
     flex-direction: column;
     margin: 0;
   }
 
+  @include desktop-up {
+    margin: 6rem 0;
+  }
+
   .portfolio-img {
+    position: relative;
+
     @include mobile {
       width: 100%;
-      // padding: 60px 0 30px 0;
       padding-bottom: 30px;
     }
 
-    img {
-      width: 32.5em;
+    @include tablet-portrait-up {
+      width: 100%;
+    }
 
-      @include mobile {
-        width: 100%;
+    .project-preview-img {
+      width: 100%;
+
+      @include tablet-portrait-up {
+        position: absolute;
+        top: 24px;
+        left: 24px;
       }
+
+      @include desktop-up {
+        position: static;
+      }
+      // @include mobile {
+      //   width: 100%;
+      // }
     }
   }
 
@@ -34,6 +51,10 @@
     @include mobile {
       padding: 24px 0 12px 0;
       margin: 0 0 72px 0;
+    }
+
+    @include tablet-portrait-up {
+      // margin-left: 0 0 0 24px;
     }
 
     h2 {
@@ -61,5 +82,7 @@
 }
 
 .reverse-col-project-preview {
-  flex-direction: column-reverse;
+  @include mobile {
+    flex-direction: column-reverse;
+  }
 }

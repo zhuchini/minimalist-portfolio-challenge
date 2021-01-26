@@ -155,7 +155,7 @@
   @include mobile {
     flex-direction: column;
     text-align: center;
-    // padding-bottom: 64px;
+    padding-bottom: 64px;
   }
 
   @include tablet-portrait-up {
