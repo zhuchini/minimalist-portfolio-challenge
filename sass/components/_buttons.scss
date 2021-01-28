@@ -61,7 +61,13 @@
 }
 
 .visit-btn {
-  margin: 36px 0;
+  @include tablet-portrait-up {
+    margin: 45px 0;
+  }
+
+  @include desktop-up {
+    margin: 55px 0;
+  }
 
   a {
     @include white-btn;

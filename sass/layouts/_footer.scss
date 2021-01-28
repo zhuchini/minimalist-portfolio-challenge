@@ -6,7 +6,7 @@ footer {
   width: 100%;
 
   @include mobile {
-    position: static;
+    position: initial;
   }
 
   .real-footer {

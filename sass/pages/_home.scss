@@ -27,7 +27,7 @@
     width: 27em;
 
     @include mobile {
-      position: static;
+      position: initial;
       width: 100%;
     }
 
@@ -158,11 +158,6 @@
     padding-bottom: 64px;
   }
 
-  @include tablet-portrait-up {
-    // display: flex;
-    // flex-direction: row;
-  }
-
   .contact-text {
     margin-right: 32px;
 
@@ -174,14 +169,10 @@
       font-family: "Ibarra Real Nova", serif;
       font-size: 40px;
 
-      @include mobile {
-        // font-size: 40px;
-      }
-
       @include tablet-portrait-up {
-        width: 17rem;
-        width: 100vw;
+        font-size: 36px;
         max-width: 360px;
+        width: 100vw;
       }
     }
   }
