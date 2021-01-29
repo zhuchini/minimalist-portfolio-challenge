@@ -2,16 +2,27 @@
   @include contact-me-div;
   margin-top: 66px;
 
+  @include mobile {
+    flex-direction: column;
+    margin: 0;
+  }
+
   .left-title {
-    margin-right: 63px;
+    flex-basis: 0;
+    flex-grow: 2;
 
     h2 {
       @include contact-h2;
+
+      @include mobile {
+        margin: 25px 0;
+      }
     }
   }
 
   .sellout {
-    width: 39.5em;
+    flex-basis: 0;
+    flex-grow: 3;
 
     p {
       color: #33323da7;
@@ -25,11 +36,25 @@
 
 .lower {
   @include contact-me-div;
-  margin-top: 32px;
-  padding-bottom: 44px;
+  margin-top: 20px;
+  padding: 35px 0;
 
-  h2 {
-    @include contact-h2;
+  @include mobile {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .left-title {
+    flex-basis: 0;
+    flex-grow: 2;
+
+    h2 {
+      @include contact-h2;
+
+      @include mobile {
+        margin: 25px 0;
+      }
+    }
   }
 }
 

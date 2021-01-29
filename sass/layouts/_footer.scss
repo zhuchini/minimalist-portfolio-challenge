@@ -6,7 +6,7 @@ footer {
   width: 100%;
 
   @include mobile {
-    position: static;
+    position: initial;
   }
 
   .real-footer {
@@ -16,6 +16,10 @@ footer {
     justify-content: space-between;
     margin: auto;
     max-width: 1080px;
+
+    @include tablet-portrait-up {
+      padding: 0 24px;
+    }
 
     @include mobile {
       flex-direction: column;
