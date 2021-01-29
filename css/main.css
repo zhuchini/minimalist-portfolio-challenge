@@ -926,10 +926,31 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+  .project-hero {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-hero img {
+    width: 100%;
+  }
+}
+
 .project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 600px) {
+  .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .project .left-desc {
@@ -938,6 +959,12 @@ body {
   float: left;
   height: 28.5rem;
   margin-right: 4.2rem;
+}
+
+@media (max-width: 600px) {
+  .project .left-desc {
+    margin: 0;
+  }
 }
 
 .project .left-desc h2 {
@@ -963,6 +990,13 @@ body {
   width: 645px;
 }
 
+@media (max-width: 600px) {
+  .project .right-desc {
+    padding: 0;
+    width: 100%;
+  }
+}
+
 .project .right-desc h3 {
   color: #33323d;
   font-family: "Ibarra Real Nova", serif;
@@ -979,12 +1013,14 @@ body {
   margin-bottom: 32px;
 }
 
-.project .right-desc .previews {
-  width: 100%;
+.project .right-desc .previews .preview-img {
+  margin-bottom: 24px;
 }
 
-.project .right-desc .previews img {
-  margin-bottom: 24px;
+@media (max-width: 600px) {
+  .project .right-desc .previews .preview-img {
+    width: 100%;
+  }
 }
 
 .project-slide {
@@ -1001,6 +1037,13 @@ body {
   margin: 24px 0 54px 0;
   padding: 32px 0;
   width: 100%;
+}
+
+@media (max-width: 600px) {
+  .project-slide .prev-next-1,
+  .project-slide .prev-next-2 {
+    padding: 20px 0;
+  }
 }
 
 .project-slide .prev-next-1 a,
@@ -1053,8 +1096,26 @@ body {
   border-top: 1px solid #eaeaeb;
 }
 
+@media (max-width: 600px) {
+  .project-slide .prev-next-1 .previous {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .project-slide .prev-next-1 .previous svg {
   padding-right: 20px;
+}
+
+@media (max-width: 600px) {
+  .project-slide .prev-next-1 .previous svg {
+    padding-bottom: 8px;
+  }
 }
 
 .project-slide .prev-next-2 {
@@ -1072,7 +1133,25 @@ body {
   text-align: right;
 }
 
+@media (max-width: 600px) {
+  .project-slide .prev-next-2 .next {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 .project-slide .prev-next-2 .next svg {
   padding-left: 20px;
+}
+
+@media (max-width: 600px) {
+  .project-slide .prev-next-2 .next svg {
+    padding-bottom: 8px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
