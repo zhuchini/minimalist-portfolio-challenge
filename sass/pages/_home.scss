@@ -159,18 +159,26 @@
   }
 
   .contact-text {
-    margin-right: 32px;
+    // margin-right: 32px;
 
     @include mobile {
-      margin: 24px;
+      // margin: 24px;
+    }
+
+    @include desktop-up {
+      margin-right: 32px;
     }
 
     h3 {
       font-family: "Ibarra Real Nova", serif;
       font-size: 40px;
 
+      @include mobile {
+        margin-bottom: 50px;
+      }
+
       @include tablet-portrait-up {
-        font-size: 36px;
+        font-size: 35px;
         max-width: 360px;
         width: 100vw;
       }

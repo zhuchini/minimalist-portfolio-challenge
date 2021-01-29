@@ -60,7 +60,7 @@
   }
 }
 
-.visit-btn {
+.view-project-btn {
   @include tablet-portrait-up {
     margin: 45px 0;
   }
@@ -71,11 +71,26 @@
 
   a {
     @include white-btn;
-  }
 
-  a:hover {
-    background-color: #33323d;
-    color: #fafafa;
+    &:hover {
+      background-color: #33323d;
+      color: #fafafa;
+    }
+  }
+}
+
+.visit-btn {
+  border-bottom: 1px solid #eaeaeb;
+  margin-top: 30px;
+  padding-bottom: 50px;
+
+  a {
+    @include white-btn;
+
+    &:hover {
+      background-color: #33323d;
+      color: #fafafa;
+    }
   }
 }
 

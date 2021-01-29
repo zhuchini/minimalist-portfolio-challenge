@@ -12,17 +12,17 @@
 
 .project {
   display: flex;
+  padding-top: 5rem;
 
   @include mobile {
     flex-direction: column;
+    padding: 0;
   }
 
   .left-desc {
-    border-bottom: 1px solid #eaeaeb;
     border-top: 1px solid #eaeaeb;
     float: left;
-    height: 28.5rem;
-    margin-right: 4.2rem;
+    margin-right: 4rem;
 
     @include mobile {
       margin: 0;
@@ -37,19 +37,24 @@
     p {
       color: #33323db6;
       font-family: "Public Sans", sans-serif;
-      font-size: 15px;
+      font-size: 16px;
       line-height: 30px;
     }
 
     .project-lang {
       color: #5fb4a2;
       font-weight: bold;
+
+      @include mobile {
+        font-size: 13px;
+        margin: 0;
+      }
     }
   }
 
   .right-desc {
     padding-left: 32px;
-    width: 645px;
+    // width: 645px;
 
     @include mobile {
       padding: 0;
@@ -62,6 +67,10 @@
       font-size: 26px;
       font-weight: 500;
       margin-top: 0;
+
+      @include mobile {
+        margin-top: 45px;
+      }
     }
 
     .background {
@@ -119,6 +128,7 @@
           font-size: 28px;
           margin: 3px 0;
         }
+
         span {
           color: #a5a5a5;
           font-family: "Public Sans", sans-serif;
