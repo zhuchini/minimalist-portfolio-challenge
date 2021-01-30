@@ -1,6 +1,6 @@
 .header {
+  box-sizing: border-box;
   margin: auto;
-  // margin-bottom: 32px;
   margin-top: 16px;
   max-width: 1080px;
   display: flex;
@@ -12,7 +12,7 @@
   }
 
   @include tablet-portrait-up {
-    padding: 24px;
+    padding: 30px;
   }
 
   // @include desktop-up {

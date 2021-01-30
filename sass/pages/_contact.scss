@@ -1,10 +1,16 @@
 .upper {
   @include contact-me-div;
-  margin-top: 66px;
+  margin-top: 8px;
+  padding-top: 35px;
 
   @include mobile {
     flex-direction: column;
-    margin: 0;
+    padding: 0;
+  }
+
+  @include tablet-portrait-up {
+    flex-direction: column;
+    padding: 0;
   }
 
   .left-title {
@@ -15,6 +21,10 @@
       @include contact-h2;
 
       @include mobile {
+        margin: 25px 0;
+      }
+
+      @include tablet-portrait-up {
         margin: 25px 0;
       }
     }
@@ -44,6 +54,11 @@
     padding: 0;
   }
 
+  @include tablet-portrait-up {
+    flex-direction: column;
+    padding: 0;
+  }
+
   .left-title {
     flex-basis: 0;
     flex-grow: 2;
@@ -52,6 +67,10 @@
       @include contact-h2;
 
       @include mobile {
+        margin: 25px 0;
+      }
+
+      @include tablet-portrait-up {
         margin: 25px 0;
       }
     }

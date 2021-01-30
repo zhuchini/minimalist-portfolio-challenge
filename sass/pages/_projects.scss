@@ -7,25 +7,51 @@
     @include mobile {
       width: 100%;
     }
+
+    @include tablet-portrait-up {
+      width: 100%;
+    }
+
+    @include tablet-landscape-up {
+      // padding-top: 24px;
+    }
   }
 }
 
 .project {
   display: flex;
-  padding-top: 5rem;
 
   @include mobile {
     flex-direction: column;
     padding: 0;
   }
 
+  @include tablet-portrait-up {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  @include tablet-landscape-up {
+    padding-top: 3rem;
+    flex-direction: row;
+  }
+
   .left-desc {
     border-top: 1px solid #eaeaeb;
-    float: left;
-    margin-right: 4rem;
 
     @include mobile {
       margin: 0;
+    }
+
+    @include tablet-portrait-up {
+      margin: 35px 0px;
+      position: relative;
+    }
+
+    @include tablet-landscape-up {
+      flex-basis: 0;
+      flex-grow: 1;
+      margin-right: 4rem;
     }
 
     h2 {
@@ -34,15 +60,29 @@
       font-size: 36px;
     }
 
-    p {
+    .project-environment {
       color: #33323db6;
       font-family: "Public Sans", sans-serif;
       font-size: 16px;
       line-height: 30px;
+
+      @include tablet-portrait-up {
+        position: absolute;
+        right: 0;
+        top: 20px;
+        width: 50%;
+      }
+
+      @include tablet-landscape-up {
+        position: initial;
+        width: auto;
+      }
     }
 
     .project-lang {
       color: #5fb4a2;
+      font-family: "Public Sans", sans-serif;
+      font-size: 14px;
       font-weight: bold;
 
       @include mobile {
@@ -61,6 +101,16 @@
       width: 100%;
     }
 
+    @include tablet-portrait-up {
+      padding: 0;
+      width: 100%;
+    }
+
+    @include tablet-landscape-up {
+      flex-basis: 0;
+      flex-grow: 2;
+    }
+
     h3 {
       color: #33323d;
       font-family: "Ibarra Real Nova", serif;
@@ -69,7 +119,11 @@
       margin-top: 0;
 
       @include mobile {
-        margin-top: 45px;
+        margin-top: 40px;
+      }
+
+      @include tablet-portrait-up {
+        margin-top: 40px;
       }
     }
 
@@ -87,9 +141,13 @@
       // width: 100%;
 
       .preview-img {
-        margin-bottom: 24px;
+        margin-bottom: 40px;
 
         @include mobile {
+          width: 100%;
+        }
+
+        @include tablet-portrait-up {
           width: 100%;
         }
       }

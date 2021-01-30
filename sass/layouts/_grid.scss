@@ -16,12 +16,12 @@ body {
   padding-bottom: 1rem;
 
   @include mobile {
-    padding: 24px;
+    padding: 30px;
     box-sizing: border-box;
   }
 
   @include tablet-portrait-up {
-    padding: 24px;
+    padding: 30px;
   }
 
   @include desktop-up {

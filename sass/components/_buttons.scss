@@ -61,6 +61,10 @@
 }
 
 .view-project-btn {
+  @include mobile {
+    margin: 40px 0;
+  }
+
   @include tablet-portrait-up {
     margin: 45px 0;
   }
@@ -81,7 +85,7 @@
 
 .visit-btn {
   border-bottom: 1px solid #eaeaeb;
-  margin-top: 30px;
+  margin-top: 35px;
   padding-bottom: 50px;
 
   a {
