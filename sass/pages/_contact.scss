@@ -1,10 +1,19 @@
 .upper {
   @include contact-me-div;
-  margin-top: 66px;
+  margin-top: 10px;
 
   @include mobile {
     flex-direction: column;
-    margin: 0;
+    padding: 0;
+  }
+
+  @include tablet-portrait-up {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  @include tablet-landscape-up {
+    flex-direction: row;
   }
 
   .left-title {
@@ -16,6 +25,10 @@
 
       @include mobile {
         margin: 25px 0;
+      }
+
+      @include tablet-portrait-up {
+        margin: 20px 0 10px 0;
       }
     }
   }
@@ -29,7 +42,7 @@
       font-family: "Public Sans", sans-serif;
       font-size: 16px;
       line-height: 30px;
-      margin: 0 0 24px 0;
+      margin-bottom: 25px;
     }
   }
 }
@@ -44,6 +57,15 @@
     padding: 0;
   }
 
+  @include tablet-portrait-up {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  @include tablet-landscape-up {
+    flex-direction: row;
+  }
+
   .left-title {
     flex-basis: 0;
     flex-grow: 2;
@@ -52,6 +74,10 @@
       @include contact-h2;
 
       @include mobile {
+        margin: 25px 0;
+      }
+
+      @include tablet-portrait-up {
         margin: 25px 0;
       }
     }
