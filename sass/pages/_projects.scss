@@ -11,10 +11,6 @@
     @include tablet-portrait-up {
       width: 100%;
     }
-
-    @include tablet-landscape-up {
-      // padding-top: 24px;
-    }
   }
 }
 
@@ -84,10 +80,16 @@
       font-family: "Public Sans", sans-serif;
       font-size: 14px;
       font-weight: bold;
+    }
 
-      @include mobile {
-        font-size: 13px;
-        margin: 0;
+    p:nth-of-type(2) {
+      @include tablet-portrait-up {
+        padding: 0;
+        margin-top: 0;
+      }
+
+      @include tablet-landscape-up {
+        padding-top: 8px;
       }
     }
   }

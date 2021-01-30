@@ -1,13 +1,8 @@
 .banner-btn {
   display: flex;
   flex-direction: row;
-  // position: absolute;
-  // height: 2.6em;
-  // bottom: 0;
-  // left: 0;
 
   @include mobile {
-    // display: none;
     margin-bottom: 6rem;
   }
 
@@ -44,10 +39,6 @@
 
   @include tablet-portrait-up {
     margin-bottom: 60px;
-  }
-
-  @include tablet-landscape-up {
-    // margin-bottom: 0;
   }
 
   a {
