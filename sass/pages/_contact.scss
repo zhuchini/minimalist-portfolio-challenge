@@ -28,7 +28,7 @@
       }
 
       @include tablet-portrait-up {
-        margin: 20px 0 10px 0;
+        margin: 25px 0;
       }
     }
   }
@@ -42,7 +42,18 @@
       font-family: "Public Sans", sans-serif;
       font-size: 16px;
       line-height: 30px;
-      margin-bottom: 25px;
+
+      @include mobile {
+        margin-top: 0;
+      }
+
+      @include tablet-portrait-up {
+        margin-top: 0;
+      }
+
+      @include tablet-landscape-up {
+        margin: 25px 0;
+      }
     }
   }
 }
@@ -59,7 +70,7 @@
 
   @include tablet-portrait-up {
     flex-direction: column;
-    padding: 0;
+    padding: 0 0 60px;
   }
 
   @include tablet-landscape-up {
@@ -84,6 +95,6 @@
   }
 }
 
-:required {
-  border: 1px solid #f43030;
-}
+// :required {
+//   border: 1px solid #f43030;
+// }

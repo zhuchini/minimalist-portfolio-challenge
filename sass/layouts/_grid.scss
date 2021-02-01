@@ -16,7 +16,7 @@ body {
   padding-bottom: 1rem;
 
   @include mobile {
-    padding: 30px;
+    padding: 0 30px;
     box-sizing: border-box;
   }
 
