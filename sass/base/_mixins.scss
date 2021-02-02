@@ -1,14 +1,13 @@
-@mixin nav-links {
-  // display: inline-block;
-  margin: 16px 0 16px 44px;
-  position: relative;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: "Public Sans", sans-serif;
-  font-size: 12px;
-  letter-spacing: 1px;
-  transform: scale(1, 0.9);
-}
+// @mixin nav-links {
+//   margin: 16px 0 16px 44px;
+//   position: relative;
+//   text-decoration: none;
+//   text-transform: uppercase;
+//   font-family: "Public Sans", sans-serif;
+//   font-size: 12px;
+//   letter-spacing: 1px;
+//   transform: scale(1, 0.9);
+// }
 
 @mixin white-btn {
   background-color: white;

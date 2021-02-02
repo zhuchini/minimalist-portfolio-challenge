@@ -3,6 +3,10 @@
     margin-bottom: 30px;
   }
 
+  @include tablet-landscape-up {
+    margin-top: 25px;
+  }
+
   img {
     @include mobile {
       width: 100%;

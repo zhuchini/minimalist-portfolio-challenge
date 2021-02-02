@@ -1,3 +1,6 @@
+$cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
+$menuItems: 3;
+
 .header {
   box-sizing: border-box;
   margin: auto;
@@ -12,28 +15,51 @@
 
   @include tablet-portrait-up {
     padding: 30px;
+    max-width: 1080px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   @include desktop-up {
     padding: 30px 0;
   }
 
-  .menu {
-    a.active-page {
-      color: #5fb4a2;
-    }
+  .nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 
-    @include mobile {
+    .menu-item {
+      float: right;
+
       a {
-        display: none;
+        color: #33323d;
+        display: block;
+        font-family: "Public Sans", sans-serif;
+        font-size: 14px;
+        font-weight: bolder;
+        letter-spacing: 1px;
+        margin: 0 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        transform: scale(1, 0.9);
+
+        @include mobile {
+          display: none;
+        }
+      }
+
+      a.active-page {
+        color: #5fb4a2;
       }
     }
   }
 }
 
-.link {
-  @include nav-links;
-  color: #33323d;
-  font-weight: 900;
-  padding: 15px 0;
-}
+// .link {
+//   @include nav-links;
+//   color: #33323d;
+//   font-weight: 900;
+//   padding: 15px 0;
+// }
