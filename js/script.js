@@ -4,12 +4,10 @@ const headerContentMarkup = `
         <svg xmlns="http://www.w3.org/2000/svg" width="61" height="32"><path fill="#33323D" fill-rule="evenodd" d="M60.082 5.878L44.408 32 28.735 5.878h31.347zM15.673 0l15.674 26.122H0L15.673 0z"/></svg>
       </a>
     </div>
-    <div class="burger-container">
       <div id="burger">
-          <div class="bar topBar"></div>
-          <div class="bar btmBar"></div>
+        <div class="bar topBar"></div>
+        <div class="bar btmBar"></div>
       </div>
-    </div>
     <ul class="menu nav-menu">
       <li class="menu-item"><a href="contact.html?linkindex=0" class="link">Contact Me</a></li>
       <li class="menu-item"><a href="portfolio.html?linkindex=1" class="link">Portfolio</a></li>
@@ -67,11 +65,18 @@ function highlightActiveLink() {
 
 highlightActiveLink();
 
-(function(){
-  var burger = document.querySelector('.burger-container'),
-      header = document.querySelector('.header');
-  
-  burger.onclick = function() {
-      header.classList.toggle('menu-opened');
-  }
-}());
+const header = document.querySelector('.header');
+const burger = document.querySelector('#burger');
+const menuItems = document.querySelector('.nav-menu');
+
+const logoBlack = document.querySelector('.logo');
+const logoWhite = document.querySelector('.logo-2');
+    
+burger.addEventListener('click', () => {
+  header.classList.toggle('menu-opened');
+  burger.classList.toggle('menu-opened');
+  menuItems.classList.toggle('menu-opened');
+});
+
+
+
