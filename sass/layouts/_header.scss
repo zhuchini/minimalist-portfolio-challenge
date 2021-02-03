@@ -16,27 +16,29 @@
       display: block;
 
       .bar {
-        @include mobile {
-          position: relative;
-          display: block;
-          width: 100%;
-          height: 3px;
-          margin: 4px 0;
-          background: #33323d;
-          transition: all 300ms ease-in;
-        }
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 3px;
+        margin: 4px 0;
+        background: #33323d;
+        transition: all 250ms ease-in;
+      }
+    }
+    .menu-opened {
+      .bar {
+        background: #fff;
       }
     }
   }
   .menu-opened {
-    .bar {
-      background: #fff;
-    }
     .topBar {
+      // background: #fff;
       transform: rotate(45deg);
       top: 2px;
     }
     .btmBar {
+      // background: #fff;
       transform: rotate(-45deg);
       top: -5px;
     }
@@ -44,7 +46,7 @@
 
   @include mobile {
     padding: 30px;
-    transition: all 0.26s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     &.menu-opened {
       background: rgba(35, 36, 40, 0.817);
@@ -66,14 +68,12 @@
   .nav-menu {
     font-family: "Public Sans", sans-serif;
     list-style-type: none;
-    transition: all 0.26s ease-in-out;
-    position: absolute;
-    top: -100px;
-    right: 0;
-    // margin: 0;
-    // padding: 0;
 
     @include mobile {
+      position: absolute;
+      top: -100px;
+      right: 0;
+      transition: all 0.3s ease-in-out;
       // visibility: hidden;
       // overflow: hidden;
 
@@ -85,6 +85,8 @@
         background-color: rgba(35, 36, 40, 0.817);
         top: 5rem;
         left: 0;
+        margin: 0;
+        padding: 0;
         z-index: 1;
       }
     }
@@ -96,13 +98,14 @@
 
       a {
         @include mobile {
-          height: 100%;
-          float: none;
+          border-bottom: 1px solid white;
+          color: #fff;
           display: block;
+          font-size: 25px;
+          margin: 0 30px 20px;
+          padding-bottom: 15px;
           text-align: right;
           text-decoration: none;
-          margin: 15px 40px;
-          color: #fff;
         }
 
         @include tablet-portrait-up {
@@ -111,7 +114,7 @@
           font-size: 14px;
           font-weight: bolder;
           letter-spacing: 1px;
-          margin: 0 20px;
+          margin-left: 45px;
           text-decoration: none;
           text-transform: uppercase;
           transform: scale(1, 0.9);
