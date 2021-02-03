@@ -12,13 +12,12 @@ footer {
   .real-footer {
     align-items: center;
     display: flex;
-    // height: 4.7em;
     justify-content: space-between;
     margin: auto;
     max-width: 1080px;
 
     @include tablet-portrait-up {
-      padding: 0 24px;
+      padding: 12px 30px;
     }
 
     @include mobile {
@@ -34,22 +33,35 @@ footer {
         flex-direction: column;
       }
 
-      .logo-2 {
-        @include mobile {
-          margin-bottom: 16px;
-        }
-      }
+      .footer-menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
 
-      .link-2 {
-        @include nav-links;
-        color: #eaeaeb;
-        padding: 10px 0;
+        .menu-item-2 {
+          float: left;
 
-        @include mobile {
-          display: flex;
-          justify-content: center;
-          margin: 0;
-          padding: 16px 0;
+          @include mobile {
+            float: none;
+          }
+
+          .link-2 {
+            color: #eaeaeb;
+            display: block;
+            font-family: "Public Sans", sans-serif;
+            font-size: 14px;
+            font-weight: bolder;
+            letter-spacing: 1px;
+            margin-left: 50px;
+            text-decoration: none;
+            text-transform: uppercase;
+            transform: scale(1, 0.9);
+
+            @include mobile {
+              margin: 25px auto;
+              text-align: center;
+            }
+          }
         }
       }
     }
