@@ -58,6 +58,10 @@
       color: #33323d;
       font-family: "Ibarra Real Nova", serif;
       font-size: 36px;
+
+      @include tablet-portrait-up {
+        margin-bottom: 20px;
+      }
     }
 
     .project-environment {

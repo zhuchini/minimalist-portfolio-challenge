@@ -3,10 +3,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
 @media (max-width: 600px) {
@@ -16,10 +12,20 @@
 }
 
 .banner-btn .down-arrow {
-  background-color: #33323d;
+  background-color: #1d3444;
   cursor: pointer;
   padding: 13px;
   display: block;
+}
+
+.banner-btn .down-arrow svg {
+  fill: none;
+  fill-rule: evenodd;
+}
+
+.banner-btn a {
+  text-decoration: none;
+  color: #fafafa;
 }
 
 .banner-btn .about-me-btn {
@@ -33,9 +39,12 @@
   text-transform: uppercase;
 }
 
-.banner-btn .about-me-btn a {
-  text-decoration: none;
-  color: #fafafa;
+.banner-btn:hover .down-arrow {
+  background-color: #57a292;
+}
+
+.banner-btn:hover .about-me-btn {
+  background-color: #5fb4a2;
 }
 
 .portfolio-btn {
@@ -472,52 +481,9 @@ body {
           align-items: center;
 }
 
-.header #burger {
-  z-index: 1;
-}
-
-@media (max-width: 600px) {
-  .header #burger {
-    position: relative;
-    width: 24px;
-    display: block;
-  }
-  .header #burger .bar {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 3px;
-    margin: 4px 0;
-    background: #33323d;
-    -webkit-transition: all 250ms ease-in;
-    transition: all 250ms ease-in;
-  }
-}
-
-.header #burger .menu-opened .bar {
-  background: #fff;
-}
-
-.header .menu-opened .topBar {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  top: 2px;
-}
-
-.header .menu-opened .btmBar {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  top: -5px;
-}
-
 @media (max-width: 600px) {
   .header {
     padding: 30px;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-  .header.menu-opened {
-    background: rgba(35, 36, 40, 0.817);
   }
 }
 
@@ -543,34 +509,47 @@ body {
   }
 }
 
-.header .nav-menu {
-  font-family: "Public Sans", sans-serif;
-  list-style-type: none;
+.header #burger {
+  z-index: 2;
 }
 
 @media (max-width: 600px) {
-  .header .nav-menu {
-    position: absolute;
-    top: -100px;
-    right: 0;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+  .header #burger {
+    position: relative;
+    width: 24px;
+    display: block;
   }
-  .header .nav-menu.menu-opened {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    background-color: rgba(35, 36, 40, 0.817);
-    top: 5rem;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    z-index: 1;
+  .header #burger .bar {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin: 4px 0;
+    background: #33323d;
+    -webkit-transition: all 250ms ease-in;
+    transition: all 250ms ease-in;
   }
+}
+
+.header #burger.menu-opened .bar {
+  background: #fff;
+}
+
+.header .menu-opened .topBar {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 2px;
+}
+
+.header .menu-opened .btmBar {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: -5px;
+}
+
+.header .nav-menu {
+  font-family: "Public Sans", sans-serif;
+  list-style-type: none;
 }
 
 @media (min-width: 600px) {
@@ -607,6 +586,36 @@ body {
   }
   .header .nav-menu .menu-item a.active-page {
     color: #5fb4a2;
+  }
+}
+
+@media (max-width: 600px) {
+  .header .nav-menu {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: -290px;
+    left: 0;
+    -webkit-transition: all 0.2s ease-in, background 0.5s ease-in;
+    transition: all 0.2s ease-in, background 0.5s ease-in;
+    z-index: 1;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: 18rem;
+    background-color: rgba(35, 36, 40, 0.817);
+  }
+  .header .nav-menu.menu-opened {
+    top: 0;
+  }
+  .header .nav-menu.menu-opened .menu-item {
+    -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
   }
 }
 
@@ -976,6 +985,12 @@ body {
 }
 
 @media (min-width: 1200px) {
+  .contact-bottom {
+    padding-bottom: 75px;
+  }
+}
+
+@media (min-width: 1200px) {
   .contact-bottom .contact-text {
     margin-right: 32px;
   }
@@ -1267,6 +1282,12 @@ body {
   color: #33323d;
   font-family: "Ibarra Real Nova", serif;
   font-size: 36px;
+}
+
+@media (min-width: 600px) {
+  .project .left-desc h2 {
+    margin-bottom: 20px;
+  }
 }
 
 .project .left-desc .project-environment {
