@@ -6,9 +6,24 @@
   justify-content: space-between;
   align-items: center;
 
+  @include mobile {
+    padding: 30px;
+  }
+
+  @include tablet-portrait-up {
+    padding: 30px;
+    max-width: 1080px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include desktop-up {
+    padding: 30px 0;
+  }
+
   #burger {
-    // border: 1px dotted black;
-    z-index: 1;
+    z-index: 2;
 
     @include mobile {
       position: relative;
@@ -25,77 +40,36 @@
         transition: all 250ms ease-in;
       }
     }
-    .menu-opened {
+
+    &.menu-opened {
       .bar {
         background: #fff;
       }
     }
   }
+
   .menu-opened {
     .topBar {
-      // background: #fff;
       transform: rotate(45deg);
       top: 2px;
     }
     .btmBar {
-      // background: #fff;
       transform: rotate(-45deg);
       top: -5px;
     }
-  }
-
-  @include mobile {
-    padding: 30px;
-    transition: all 0.3s ease-in-out;
-
-    &.menu-opened {
-      background: rgba(35, 36, 40, 0.817);
-    }
-  }
-
-  @include tablet-portrait-up {
-    padding: 30px;
-    max-width: 1080px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  @include desktop-up {
-    padding: 30px 0;
   }
 
   .nav-menu {
     font-family: "Public Sans", sans-serif;
     list-style-type: none;
 
-    @include mobile {
-      position: absolute;
-      top: -100px;
-      right: 0;
-      transition: all 0.3s ease-in-out;
-      // visibility: hidden;
-      // overflow: hidden;
-
-      &.menu-opened {
-        // visibility: visible;
-        display: flex;
-        flex-direction: column-reverse;
-        // position: fixed;
-        background-color: rgba(35, 36, 40, 0.817);
-        top: 5rem;
-        left: 0;
-        margin: 0;
-        padding: 0;
-        z-index: 1;
-      }
-    }
-
     .menu-item {
+      // <li> list
       @include tablet-portrait-up {
         float: right;
       }
 
+      // ----------- Mobile Menu Link Styles -----------
       a {
         @include mobile {
           border-bottom: 1px solid white;
@@ -107,6 +81,7 @@
           text-align: right;
           text-decoration: none;
         }
+        // -----------------------------------------------
 
         @include tablet-portrait-up {
           color: #33323d;
@@ -124,5 +99,74 @@
         }
       }
     }
+
+    // ----------- Initial position before opening -----------
+    @include mobile {
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top: -290px;
+      left: 0;
+      transition: all 0.2s ease-in, background 0.5s ease-in;
+      z-index: 1;
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+      height: 18rem;
+      background-color: rgba(35, 36, 40, 0.817);
+
+      // ----------- Opened Menu on Mobile -----------
+      &.menu-opened {
+        top: 0;
+        // left: 0;?
+        .menu-item {
+          transition-delay: 0.3s;
+        }
+      }
+    }
   }
 }
+
+// .class {
+//   // mobile styles
+
+//   @include tablet {
+//     // tablet styles
+//     .other {
+//       &:hover {
+
+//       }
+//     }
+//   }
+
+//   @include dekstop {
+//     // sty;es
+//   }
+// }
+
+// .class .other:hover {
+
+// }
+
+// .class { ... }
+
+// @include tablet{
+//   .class {
+//     ...
+//   }
+// }
+
+// // OR
+
+// .other-class
+
+// .class
+
+// .
+// .
+// .
+
+// @include tablet {
+//   .other-class{...}
+//   .class{...}
+// }

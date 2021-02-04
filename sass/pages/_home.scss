@@ -145,6 +145,10 @@
     padding-bottom: 75px;
   }
 
+  @include desktop-up {
+    padding-bottom: 75px;
+  }
+
   .contact-text {
     @include desktop-up {
       margin-right: 32px;
